@@ -1,0 +1,49 @@
+.work_wrapper {
+  max-width: 70%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  margin-left: 15%;
+  margin-right: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card_wrapper {
+  max-width: 48%;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  padding: 2em;
+  background-color: #ffffff;
+}
+
+.container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: #677c77;
+}
+
+.container:hover .overlay {
+  opacity: 0.7;
+}
+
+.icon {
+  color: #ffffff;
+  font-size: 7rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}

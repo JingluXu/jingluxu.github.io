@@ -1,0 +1,19 @@
+.form_wrapper {
+  display: flex;
+  flex: column;
+  width: 50%;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  padding: 2em;
+  background-color: #ffffff;
+}
+
+.message {
+  margin-right: 5%;
+  width: 45%;
+}
+
+.contact_msg {
+  font-size: 4rem;
+  margin: 5rem;
+}

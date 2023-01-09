@@ -1,0 +1,39 @@
+{
+    "basics": {
+        "name": "Jinglu Xu",
+        "email": "mixlulu@gmail.com",
+        "job1": "Cloud Engineer",
+        "job2": "Software Developer",
+        "url": "https://jingluxu.github.io/",
+        "location": {
+            "city": "Auckland",
+            "country": "New Zealand"
+        },
+        "profiles": [
+            {
+                "network": "Gmail",
+                "username": "mixlulu@gmail.com",
+                "url": "mailto:mixlulu@gmail.com",
+                "icon": "fa fa-envelope"
+            },
+            {
+                "network": "LinkedIn",
+                "username": "jinglu-xu",
+                "url": "https://www.linkedin.com/in/jinglu-xu/",
+                "icon": "fab fa-linkedin-in"
+            },
+            {
+                "network": "GitHub",
+                "username": "",
+                "url": "https://www.github.com/",
+                "icon": "fab fa-github"
+            },
+            {
+                "network": "DeviantArt",
+                "username": "",
+                "url": "https://www.deviantart.com/",
+                "icon": "fab fa-deviantart"
+            }
+        ]
+    }
+}

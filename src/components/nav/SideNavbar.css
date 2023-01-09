@@ -1,0 +1,32 @@
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 5%;
+  margin-left: 90%;
+  font-size: 2rem;
+  z-index: 1;
+  width: 10%;
+}
+
+nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #455442;
+}
+
+nav a:hover {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #8e8f27;
+}
+
+nav a.active {
+  color: #8e8f27;
+}
+
+nav Link {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #455442;
+}

@@ -1,0 +1,23 @@
+.aboutme_wrapper {
+  padding-top: 8%;
+  padding-bottom: 8%;
+  max-width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  display: flex;
+}
+
+.photo {
+  max-width: 30%;
+}
+
+.intro {
+  margin-left: 5%;
+  max-width: 65%;
+}
+
+.artwork {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
