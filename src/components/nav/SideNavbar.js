@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Typography } from "@material-ui/core";
-// import ResumePDF from './../../assets/jinglu-resume.pdf';
+import ResumePDF from './../../assets/jinglu-resume.pdf';
 
 import "./SideNavbar.css";
 
@@ -38,9 +38,9 @@ export const SideNavbar = () => {
         <Typography gutterBottom variant="h5">CONTACT</Typography>
       </a>
 
-      {/* <a href={`${ResumePDF}`} target='_blank' rel='noopener noreferrer'>
+      <a href={`${ResumePDF}`} target='_blank' rel='noopener noreferrer'>
         <Typography gutterBottom variant="h5">RESUME</Typography>
-      </a> */}
+      </a>
     </nav>
   );
 };
