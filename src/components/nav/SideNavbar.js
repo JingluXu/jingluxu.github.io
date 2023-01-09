@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Typography } from "@material-ui/core";
-import ResumePDF from './../../assets/jinglu-resume.pdf';
+import ResumePDF from './../../assets/jinglu-xu-resume.pdf';
 
 import "./SideNavbar.css";
 
