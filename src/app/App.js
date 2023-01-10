@@ -1,8 +1,8 @@
 import React, { lazy } from "react";
-
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { HelmetMeta } from "./HelmetMeta";
-import { ThemeProvider } from "../components/theme/ThemeProvider";
+import { ThemeProvider } from "@material-ui/core/styles";
+import { Theme } from "../components/theme/Themes.js";
 import { CssBaseline } from "@material-ui/core";
 
 import { Home } from "../pages/Home";
@@ -12,7 +12,7 @@ const PageNotFound = lazy(() => import("../pages/PageNotFound"));
 export const App = () => {
 
   return (
-    <ThemeProvider>
+    <ThemeProvider theme={Theme}>
       <CssBaseline />
       <Router>
         <HelmetMeta />

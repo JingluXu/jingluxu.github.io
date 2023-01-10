@@ -3,10 +3,9 @@ nav {
   display: flex;
   flex-direction: column;
   top: 5%;
-  margin-left: 90%;
-  font-size: 2rem;
+  right:5%;
   z-index: 1;
-  width: 10%;
+  width: 8%;
 }
 
 nav a {

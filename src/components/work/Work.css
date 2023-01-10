@@ -1,23 +1,6 @@
-.work_wrapper {
-  max-width: 70%;
-  padding-top: 4%;
-  padding-bottom: 4%;
-  margin-left: 15%;
-  margin-right: 15%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.card_wrapper {
-  max-width: 48%;
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  padding: 2em;
-  background-color: #ffffff;
-}
-
 .container {
   position: relative;
+  margin-top: 5%;
 }
 
 .overlay {
