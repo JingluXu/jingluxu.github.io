@@ -48,8 +48,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#ffffff",
     [theme.breakpoints.down("md")]: {
       maxWidth: "85%",
-      marginTop: "0.5rem",
-      marginBottom: "0.5rem",
+      marginTop: "1%",
+      marginBottom: "1%",
     },
   },
   box: {
@@ -182,7 +182,7 @@ export const Work = () => {
               <Paper
                 elevation={0}
                 style={{
-                  height: "15em",
+                  minHeight: 240,
                   marginTop: "8%",
                 }}
               >
@@ -267,7 +267,7 @@ export const Work = () => {
               <Paper
                 elevation={0}
                 style={{
-                  minHeight: "15em",
+                  minHeight: 240,
                   marginTop: "8%",
                 }}
               >

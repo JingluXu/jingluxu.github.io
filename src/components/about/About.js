@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: "5%",
     [theme.breakpoints.down("md")]: {
       maxWidth: "70%",
-      marginBottom: "3rem",
+      marginBottom: "5%",
     },
   },
   intro: {

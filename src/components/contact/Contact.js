@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     padding: "2em",
     backgroundColor: "#ffffff",
     [theme.breakpoints.down("md")]: {
-      marginTop: "1rem",
+      marginTop: "3%",
       maxWidth: "85%",
     },
   },
@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: "5%",
     [theme.breakpoints.down("md")]: {
       maxWidth: "85%",
-      marginTop: "3rem",
+      marginTop: "3%",
     },
   }
 }));
