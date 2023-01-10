@@ -182,7 +182,7 @@ export const Work = () => {
               <Paper
                 elevation={0}
                 style={{
-                  minHeight: 200,
+                  height: "15em",
                   marginTop: "8%",
                 }}
               >
@@ -267,7 +267,7 @@ export const Work = () => {
               <Paper
                 elevation={0}
                 style={{
-                  minHeight: 200,
+                  minHeight: "15em",
                   marginTop: "8%",
                 }}
               >

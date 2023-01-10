@@ -44,11 +44,6 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: "85%",
     },
   },
-  skills: {
-    display: "flex",
-    flexDirection: "row",
-    marginLeft: "0",
-  },
   artwork: {
     display: "flex",
     flexDirection: "row",
@@ -143,24 +138,24 @@ export const About = () => {
               In my short time at these organizations, I've already contributed to over four projects and cleared five cloud related certificates.
               In my previous role, I was a MSc (Computer Science) student and a web developer.</Typography><br />
             <Typography gutterBottom variant="body1">Here are a few technologies I've been working with recently:</Typography>
-            <Grid container className={classes.skills} spacing={4}>
-              <Grid item xs={4}>
-                <Typography gutterBottom variant="body2">
+            <Grid container spacing={4}>
+              <Grid item md={6}>
+                <Typography gutterBottom variant="body1">
                   <i class="fa fa-cloud" aria-hidden="true"></i> {skills[0].title}
                 </Typography>
 
                 {skills[0].description.map((descript) =>
-                  <Typography gutterBottom variant="body2">
+                  <Typography gutterBottom variant="body1">
                     <i class="fa fa-check" aria-hidden="true"></i> {descript.text}
                   </Typography>
                 )}
               </Grid>
-              <Grid item xs={4}>
-                <Typography gutterBottom variant="body2">
+              <Grid item md={6}>
+                <Typography gutterBottom variant="body1">
                   <i class="fa fa-code" aria-hidden="true"></i> {skills[1].title}
                 </Typography>
                 {skills[1].description.map((descript) =>
-                  <Typography gutterBottom variant="body2">
+                  <Typography gutterBottom variant="body1">
                     <i class="fa fa-check" aria-hidden="true"></i> {descript.text}
                   </Typography>
                 )}

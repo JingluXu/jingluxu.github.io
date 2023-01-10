@@ -53,7 +53,10 @@ export const Theme =
         color: "#455442",
       },
       body1: {
-
+        fontSize: [pxToRem(18), "!important"],
+        [breakpoints.down("md")]: {
+          fontSize: [pxToRem(14), "!important"],
+        }
       },
       subtitle1: {
         color: "#677c77",
