@@ -44,7 +44,7 @@ export const Theme =
       },
       h5: {
         color: "#455442",
-        fontSize: [pxToRem(25), "!important"],
+        fontSize: [pxToRem(22), "!important"],
         [breakpoints.down("md")]: {
           fontSize: [pxToRem(15), "!important"],
         }

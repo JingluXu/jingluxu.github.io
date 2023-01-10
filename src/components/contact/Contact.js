@@ -72,7 +72,7 @@ export const Contact = () => {
       <Container component="main" className={classes.main}>
         <div className={classes.message}><Typography gutterBottom variant="h2">Want to work together?</Typography>
           <Typography gutterBottom variant="body1">Drop me an email at <Link href="mailto:mixlulu@gmail.com" underline="none" style={{ color: "#8e8f27", }}>{Resume.basics.email}</Link> or simply fill out the form and I will reply to you soon.</Typography>
-          <Typography gutterBottom variant="body1">Let"s create something beautiful and impactful.</Typography>
+          <Typography gutterBottom variant="body1">Let's create something beautiful and impactful.</Typography>
         </div>
         <div className={classes.formwrapper}>
           <form ref={form} onSubmit={sendEmail}>

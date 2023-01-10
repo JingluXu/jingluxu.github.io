@@ -3,9 +3,8 @@ nav {
   display: flex;
   flex-direction: column;
   top: 5%;
-  right:5%;
+  right: 5%;
   z-index: 1;
-  width: 8%;
 }
 
 nav a {
