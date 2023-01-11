@@ -1,48 +1,79 @@
 import React from "react";
 import { useState } from "react";
-import { Container, Typography } from "@material-ui/core";
+import { Link, Typography } from "@material-ui/core";
 import ResumePDF from "./../../assets/jinglu-xu-resume.pdf";
+import { makeStyles } from "@material-ui/core/styles";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
 
-import "./SideNavbar.css";
+const useStyles = makeStyles((theme) => ({
+  bar: {
+    height: "100vh",
+    width: "10%",
+    boxShadow: "none",
+    [theme.breakpoints.down("md")]: {
+      width: "100%",
+      height: "6vh",
+    },
+  },
+  text: {
+    textDecoration: "none",
+    color: "#455442",
+    "&:hover": {
+      color: "#8e8f27",
+    },
+    "&:active": {
+      color: "#8e8f27",
+    }
+  },
+}));
 
 export const SideNavbar = () => {
-  const [activeNav, setActiveNav] = useState("#");
+
+  const classes = useStyles();
+
+  const [setActiveNav] = useState("#");
 
   return (
-    <Container>
-      <nav>
-        <a href="/#"
+    <AppBar position="fixed"
+      className={classes.bar}
+      style={{
+        background: "#ffffff",
+      }}
+    >
+      <Toolbar>
+        <Link href="/#"
           onClick={() => setActiveNav("#")}
-          className={activeNav === "#" ? "active" : ""}
+          underline="none"
         >
-          <Typography gutterBottom variant="h5">HOME</Typography>
-        </a>
+          <Typography variant="body1" className={classes.text}>HOME</Typography>
+        </Link>
 
-        <a href="#about"
+        <Link href="#about"
           onClick={() => setActiveNav("#about")}
-          className={activeNav === "#about" ? "active" : ""}
+          underline="none"
         >
-          <Typography gutterBottom variant="h5">ABOUT</Typography>
-        </a>
+          <Typography variant="body1" className={classes.text}>ABOUT</Typography>
+        </Link>
 
-        <a href="#work"
+        <Link href="#work"
           onClick={() => setActiveNav("#work")}
-          className={activeNav === "#work" ? "active" : ""}
+          underline="none"
         >
-          <Typography gutterBottom variant="h5">WORK</Typography>
-        </a>
+          <Typography variant="body1" className={classes.text}>WORK</Typography>
+        </Link>
 
-        <a href="#contact"
+        <Link href="#contact"
           onClick={() => setActiveNav("#contact")}
-          className={activeNav === "#contact" ? "active" : ""}
+          underline="none"
         >
-          <Typography gutterBottom variant="h5">CONTACT</Typography>
-        </a>
+          <Typography variant="body1" className={classes.text}>CONTACT</Typography>
+        </Link>
 
-        <a href={ResumePDF} target="_blank" rel="noopener noreferrer">
-          <Typography gutterBottom variant="h5">RESUME</Typography>
-        </a>
-      </nav>
-    </Container>
+        <Link href={ResumePDF} target="_blank" rel="noopener noreferrer" underline="none">
+          <Typography className={classes.text}>RESUME</Typography>
+        </Link>
+      </Toolbar>
+    </AppBar>
   );
 };

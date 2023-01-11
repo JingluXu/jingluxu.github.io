@@ -30,7 +30,7 @@ export const Theme =
       h3: {
         color: "#4e7779",
         fontWeight: [500, "!important"],
-        fontSize: [pxToRem(50), "!important"],
+        fontSize: [pxToRem(35), "!important"],
         [breakpoints.down("md")]: {
           fontSize: [pxToRem(30), "!important"],
         }
@@ -69,25 +69,23 @@ export const Theme =
       MuiCssBaseline: {
         "@global": {
           body: {
-            color: "#33472c",
+            color: "#455442",
             backgroundColor: "#e0efea",
           },
         },
       },
-      MuiButton: {
-        text: {
-          backgroundColor: "#8e8f27",
-          borderRadius: 3,
-          border: 0,
-          color: "#ffffff",
-          height: "3rem",
-          padding: "0 30px",
-        },
+      MuiToolbar: {
         root: {
-          textTransform: "none",
-          "&:hover": {
-            backgroundColor: "#677c77",
-          },
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          height: "40vh",
+          marginTop: "30vh",
+          marginBottom: "30vh",
+          [breakpoints.down("md")]: {
+            flexDirection: "row",
+            marginTop: 0,
+          }
         },
       },
       MuiIconButton: {

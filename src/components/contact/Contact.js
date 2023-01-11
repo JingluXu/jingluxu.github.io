@@ -4,27 +4,26 @@ import { useRef } from "react";
 import { Container, Typography, TextField, Button, Link } from "@material-ui/core";
 import Resume from "../../assets/resume.json";
 import Swal from "sweetalert2";
-
 import emailjs from "@emailjs/browser";
 
 const useStyles = makeStyles((theme) => ({
   main: {
     maxWidth: "70%",
+    marginLeft: "10%",
     paddingTop: "15%",
     paddingBottom: "15%",
-    marginLeft: "15%",
-    marginRight: "15%",
     display: "flex",
     flexDirection: "row",
     [theme.breakpoints.down("md")]: {
       flexDirection: "column",
+      maxWidth: "85%",
     },
   },
   formwrapper: {
     display: "flex",
     flex: "column",
     borderRadius: "16px",
-    boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+    boxShadow: "none",
     padding: "2em",
     backgroundColor: "#ffffff",
     [theme.breakpoints.down("md")]: {
@@ -38,7 +37,16 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: "85%",
       marginTop: "3%",
     },
-  }
+  },
+  button: {
+    color: "#ffffff",
+    backgroundColor: "#8e8f27",
+    textTransform: "none",
+    padding: "0.5rem 1rem",
+    "&:hover": {
+      backgroundColor: "#677c77",
+    },
+  },
 }));
 
 export const Contact = () => {
@@ -102,8 +110,8 @@ export const Contact = () => {
               name="message"
               variant="outlined"
             />
-            <Button type="submit" variant="text">
-              <Typography variant="subtitle2">Send</Typography>
+            <Button type="submit" className={classes.button}>
+              <Typography variant="body1">Send</Typography>
             </Button>
           </form>
         </div>

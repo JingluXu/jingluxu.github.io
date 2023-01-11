@@ -24,26 +24,25 @@ import automarker from "../../assets/automarker.png";
 const useStyles = makeStyles((theme) => ({
   main: {
     minWidth: "100%",
-    minHeight: "100vh",
     backgroundColor: "#90c7ca",
   },
   workwrapper: {
     maxWidth: "70%",
-    paddingTop: "4%",
-    paddingBottom: "4%",
-    marginLeft: "15%",
-    marginRight: "15%",
+    marginLeft: "10%",
+    paddingTop: "7%",
+    paddingBottom: "7%",
     justifyContent: "space-between",
     display: "flex",
     flexDirection: "row",
     [theme.breakpoints.down("md")]: {
       flexDirection: "column",
+      maxWidth: "85%",
     },
   },
   cardwrapper: {
     maxWidth: "48%",
     borderRadius: "16px",
-    boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+    boxShadow: "none",
     padding: "2em",
     backgroundColor: "#ffffff",
     [theme.breakpoints.down("md")]: {
@@ -53,13 +52,26 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   box: {
-    height: 300,
+    height: "15vw",
     width: "100%",
     objectFit: "contain",
+  },
+  paper: {
+    height: "calc(550px - 20vw)",
+    marginTop: "8%",
+    [theme.breakpoints.down("md")]: {
+      height: "calc(400px - 20vw)",
+    },
   },
   stepper: {
     "& .MuiMobileStepper-dotActive": {
       backgroundColor: "#4e7779"
+    },
+  },
+  button: {
+    color: "#4e7779",
+    "&:hover": {
+      backgroundColor: "transparent",
     },
   },
 }));
@@ -181,10 +193,7 @@ export const Work = () => {
               </Link>
               <Paper
                 elevation={0}
-                style={{
-                  minHeight: 240,
-                  marginTop: "8%",
-                }}
+                className={classes.paper}
               >
                 <Typography gutterBottom variant="h6">{work[0].images[activeStep1].label}</Typography>
                 <Typography variant="subtitle1">{work[0].images[activeStep1].details}</Typography>
@@ -197,14 +206,9 @@ export const Work = () => {
                 className={classes.stepper}
                 nextButton={
                   <Button
+                    className={classes.button}
                     onClick={handleNext1}
                     disabled={activeStep1 === work[0].images.length - 1}
-                    sx={(theme) => ({
-                      color: "#4e7779",
-                      "&:hover": {
-                        backgroundColor: "transparent",
-                      },
-                    })}
                   >
                     {theme.direction === "rtl" ? (
                       <ArrowBackIosIcon />
@@ -214,13 +218,7 @@ export const Work = () => {
                   </Button>
                 }
                 backButton={
-                  <Button onClick={handleBack1} disabled={activeStep1 === 0}
-                    sx={(theme) => ({
-                      color: "#4e7779",
-                      "&:hover": {
-                        backgroundColor: "transparent",
-                      },
-                    })}>
+                  <Button className={classes.button} onClick={handleBack1} disabled={activeStep1 === 0}>
                     {theme.direction === "rtl" ? (
                       <ArrowForwardIosIcon />
                     ) : (
@@ -266,10 +264,7 @@ export const Work = () => {
               </Link>
               <Paper
                 elevation={0}
-                style={{
-                  minHeight: 240,
-                  marginTop: "8%",
-                }}
+                className={classes.paper}
               >
                 <Typography gutterBottom variant="h6">{work[1].images[activeStep2].label}</Typography>
                 <Typography variant="subtitle1">{work[1].images[activeStep2].details}</Typography>
@@ -282,14 +277,9 @@ export const Work = () => {
                 className={classes.stepper}
                 nextButton={
                   <Button
+                    className={classes.button}
                     onClick={handleNext2}
                     disabled={activeStep2 === work[1].images.length - 1}
-                    sx={(theme) => ({
-                      color: "#4e7779",
-                      "&:hover": {
-                        backgroundColor: "transparent",
-                      },
-                    })}
                   >
                     {theme.direction === "rtl" ? (
                       <ArrowBackIosIcon />
@@ -299,13 +289,7 @@ export const Work = () => {
                   </Button>
                 }
                 backButton={
-                  <Button onClick={handleBack2} disabled={activeStep2 === 0}
-                    sx={(theme) => ({
-                      color: "#4e7779",
-                      "&:hover": {
-                        backgroundColor: "transparent",
-                      },
-                    })}>
+                  <Button className={classes.button} onClick={handleBack2} disabled={activeStep2 === 0}>
                     {theme.direction === "rtl" ? (
                       <ArrowForwardIosIcon />
                     ) : (

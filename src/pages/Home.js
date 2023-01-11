@@ -18,10 +18,10 @@ export const Home = () => {
 
   return (
     <>
+      <SideNavbar />
       <div className={classes.page} id="home">
         <Title />
       </div>
-      <SideNavbar />
       <div className={classes.page} id="about">
         <About />
       </div>

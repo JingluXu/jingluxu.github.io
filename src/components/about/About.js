@@ -15,19 +15,18 @@ import brown from "../../assets/birds/brown.png";
 const useStyles = makeStyles((theme) => ({
   aboutme: {
     minWidth: "100%",
-    minHeight: "100vh",
     backgroundColor: "#bbdddf",
     paddingTop: "8%",
     paddingBottom: "8%",
   },
   aboutmewrapper: {
     maxWidth: "70%",
-    marginLeft: "15%",
-    marginRight: "15%",
+    marginLeft: "10%",
     display: "flex",
     flexDirection: "row",
     [theme.breakpoints.down("md")]: {
       flexDirection: "column",
+      maxWidth: "85%",
     },
   },
   photo: {
@@ -117,7 +116,8 @@ export const About = () => {
               align="center"
               style={{
                 borderRadius: "16px",
-                boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+                // boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+                boxShadow: "none",
               }}>
               <Avatar
                 alt="profile"
