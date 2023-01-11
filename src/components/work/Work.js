@@ -1,12 +1,11 @@
 import React from "react";
-import { Link, Grid } from "@material-ui/core";
+import { Link, Grid, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import MobileStepper from "@mui/material/MobileStepper";
 import Paper from "@mui/material/Paper";
-import Button from "@mui/material/Button";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import SwipeableViews from "react-swipeable-views";
@@ -57,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
     objectFit: "contain",
   },
   paper: {
-    height: "calc(550px - 20vw)",
+    height: "calc(560px - 20vw)",
     marginTop: "8%",
     [theme.breakpoints.down("md")]: {
       height: "calc(400px - 20vw)",
