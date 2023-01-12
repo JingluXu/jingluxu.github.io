@@ -22,15 +22,15 @@ export const Theme =
       h2: {
         color: "#677C77",
         fontWeight: [700, "!important"],
-        fontSize: [pxToRem(70), "!important"],
+        fontSize: [pxToRem(60), "!important"],
         [breakpoints.down("md")]: {
-          fontSize: [pxToRem(35), "!important"],
+          fontSize: [pxToRem(30), "!important"],
         }
       },
       h3: {
         color: "#4e7779",
         fontWeight: [500, "!important"],
-        fontSize: [pxToRem(35), "!important"],
+        fontSize: [pxToRem(40), "!important"],
         [breakpoints.down("md")]: {
           fontSize: [pxToRem(30), "!important"],
         }
@@ -62,6 +62,12 @@ export const Theme =
         color: "#677c77",
         [breakpoints.down("md")]: {
           fontSize: [pxToRem(15), "!important"],
+        }
+      },
+      subtitle2: {
+        color: "#677c77",
+        [breakpoints.down("md")]: {
+          fontSize: [pxToRem(12), "!important"],
         }
       },
     },
@@ -97,6 +103,8 @@ export const Theme =
           "&:hover": {
             color: "#677c77",
             backgroundColor: "transparent",
+            padding: "0rem 2rem",
+            transition: "all 0.4s ease 0s",
           },
         },
       },
@@ -123,6 +131,7 @@ export const Theme =
             },
             "&:hover fieldset": {
               borderColor: "#8e8f27",
+              transition: "all 0.4s ease 0s",
             },
             "&.Mui-focused fieldset": {
               borderColor: "#8e8f27",

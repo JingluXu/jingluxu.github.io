@@ -22,7 +22,7 @@ export const Home = () => {
       <div className={classes.page} id="home">
         <Title />
       </div>
-      <div className={classes.page} id="about">
+      <div id="about">
         <About />
       </div>
       <div className={classes.page} id="work">

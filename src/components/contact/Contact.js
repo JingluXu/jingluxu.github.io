@@ -26,9 +26,12 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "none",
     padding: "2em",
     backgroundColor: "#ffffff",
+    maxWidth: "45%",
+    marginLeft: "3%",
     [theme.breakpoints.down("md")]: {
       marginTop: "3%",
       maxWidth: "85%",
+      marginLeft: 0,
     },
   },
   message: {
@@ -45,6 +48,8 @@ const useStyles = makeStyles((theme) => ({
     padding: "0.5rem 1rem",
     "&:hover": {
       backgroundColor: "#677c77",
+      padding: "0.5rem 1.5rem",
+      transition: "all 0.4s ease 0s",
     },
   },
 }));
@@ -106,7 +111,8 @@ export const Contact = () => {
               label="Message"
               type="textarea"
               multiline
-              minRows={7}
+              maxRows={7}
+              rows={7}
               name="message"
               variant="outlined"
             />

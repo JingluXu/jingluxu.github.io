@@ -14,10 +14,11 @@ import brown from "../../assets/birds/brown.png";
 
 const useStyles = makeStyles((theme) => ({
   aboutme: {
-    minWidth: "100%",
+    minWidth: "100vw",
     backgroundColor: "#bbdddf",
     paddingTop: "8%",
     paddingBottom: "8%",
+    minHeight: "100vh",
   },
   aboutmewrapper: {
     maxWidth: "70%",
@@ -48,11 +49,13 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "row",
     width: "90%",
     justifyContent: "space-between",
+    marginTop: "5%",
   },
   cardmedia: {
     height: 150, width: 150, borderRadius: "50%",
     "&:hover": {
-      transform: "scale(1.4)",
+      transform: "scale(1.5)",
+      transition: "all 0.4s ease 0s",
     },
     [theme.breakpoints.down("md")]: {
       height: 80, width: 80,
@@ -116,19 +119,26 @@ export const About = () => {
               align="center"
               style={{
                 borderRadius: "16px",
-                // boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
                 boxShadow: "none",
+                backgroundColor: "#e0efea",
               }}>
               <Avatar
                 alt="profile"
                 src={profile}
-                style={{ marginTop: "10%", height: "65%", width: "65%", }}
+                variant="circular"
+                style={{
+                  margin: "6%",
+                  height: "70%",
+                  width: "70%",
+                }}
               />
-              <CardContent>
-                <Typography gutterBottom variant="h4" style={{ fontWeight: 700, }} align="center">{Resume.basics.name}</Typography><br />
-                <Typography gutterBottom variant="subtitle1" align="center"><i class="fa fa-suitcase" aria-hidden="true"></i> {Resume.basics.job1} & {Resume.basics.job2}</Typography>
-                <Typography gutterBottom variant="subtitle1" align="center"><i class="fa fa-graduation-cap" aria-hidden="true"></i> MSc, BSc, BBA</Typography>
-                <Typography gutterBottom variant="subtitle1" align="center"><i class="fa fa-map-pin" aria-hidden="true"></i> {Resume.basics.location.city}, {Resume.basics.location.country}</Typography>
+              <CardContent style={{
+                backgroundColor: "#ffffff",
+              }}>
+                <Typography gutterBottom variant="h4" style={{ fontWeight: 700, }} align="center">{Resume.basics.name}</Typography>
+                <Typography gutterBottom variant="subtitle2" align="center"><i class="fa fa-suitcase" aria-hidden="true"></i> {Resume.basics.job1} & {Resume.basics.job2}</Typography>
+                <Typography gutterBottom variant="subtitle2" align="center"><i class="fa fa-graduation-cap" aria-hidden="true"></i> MSc, BSc, BBA</Typography>
+                <Typography gutterBottom variant="subtitle2" align="center"><i class="fa fa-map-pin" aria-hidden="true"></i> {Resume.basics.location.city}, {Resume.basics.location.country}</Typography>
                 <Typography gutterBottom align="center">{socialItems}</Typography>
               </CardContent>
             </Card></div>
@@ -140,29 +150,29 @@ export const About = () => {
             <Typography gutterBottom variant="body1">Here are a few technologies I've been working with recently:</Typography>
             <Grid container spacing={4}>
               <Grid item md={6}>
-                <Typography gutterBottom variant="body1">
+                <Typography gutterBottom variant="subtitle2">
                   <i class="fa fa-cloud" aria-hidden="true"></i> {skills[0].title}
                 </Typography>
 
                 {skills[0].description.map((descript) =>
-                  <Typography gutterBottom variant="body1">
+                  <Typography gutterBottom variant="subtitle2">
                     <i class="fa fa-check" aria-hidden="true"></i> {descript.text}
                   </Typography>
                 )}
               </Grid>
               <Grid item md={6}>
-                <Typography gutterBottom variant="body1">
+                <Typography gutterBottom variant="subtitle2">
                   <i class="fa fa-code" aria-hidden="true"></i> {skills[1].title}
                 </Typography>
                 {skills[1].description.map((descript) =>
-                  <Typography gutterBottom variant="body1">
+                  <Typography gutterBottom variant="subtitle2">
                     <i class="fa fa-check" aria-hidden="true"></i> {descript.text}
                   </Typography>
                 )}
               </Grid></Grid><br />
             <Typography gutterBottom variant="body1">When not working or coding my next project,
               I love painting in a bunch of different mediums, including arylic, coloured pencil, gouache, and watercolour.
-              Currently, I am working on the bird series.</Typography><br />
+              Currently, I am working on the bird series.</Typography>
             <div className={classes.artwork}>
               <Tooltip title="Little Penguin/Kororā" placement="left" TransitionComponent={Zoom}>
                 <CardMedia className={classes.cardmedia}

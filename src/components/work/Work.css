@@ -1,6 +1,13 @@
 .container {
   position: relative;
-  margin-top: 5%;
+}
+
+.contain {
+  object-fit: contain;
+  padding: 3%;
+  background-color: #f4f4e9;
+  height: 15vw;
+  width: 100%;
 }
 
 .overlay {
@@ -22,9 +29,9 @@
 
 .icon {
   color: #ffffff;
-  font-size: 7rem;
+  font-size: 7vw;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);

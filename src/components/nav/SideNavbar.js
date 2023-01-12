@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     width: "10%",
     boxShadow: "none",
     [theme.breakpoints.down("md")]: {
-      width: "100%",
+      width: "100vw",
       height: "6vh",
     },
   },
@@ -21,6 +21,8 @@ const useStyles = makeStyles((theme) => ({
     color: "#455442",
     "&:hover": {
       color: "#8e8f27",
+      paddingRight: "0.5rem",
+      transition: "all 0.4s ease 0s",
     },
     "&:active": {
       color: "#8e8f27",
@@ -38,7 +40,7 @@ export const SideNavbar = () => {
     <AppBar position="fixed"
       className={classes.bar}
       style={{
-        background: "#ffffff",
+        backgroundColor: "#f4f4e9",
       }}
     >
       <Toolbar>

@@ -3,7 +3,6 @@ import { Link, Grid, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
-import Box from "@mui/material/Box";
 import MobileStepper from "@mui/material/MobileStepper";
 import Paper from "@mui/material/Paper";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
@@ -22,7 +21,7 @@ import automarker from "../../assets/automarker.png";
 
 const useStyles = makeStyles((theme) => ({
   main: {
-    minWidth: "100%",
+    minWidth: "100vw",
     backgroundColor: "#90c7ca",
   },
   workwrapper: {
@@ -50,14 +49,8 @@ const useStyles = makeStyles((theme) => ({
       marginBottom: "1%",
     },
   },
-  box: {
-    height: "15vw",
-    width: "100%",
-    objectFit: "contain",
-  },
   paper: {
-    height: "calc(560px - 20vw)",
-    marginTop: "8%",
+    height: "calc(400px - 11vw)",
     [theme.breakpoints.down("md")]: {
       height: "calc(400px - 20vw)",
     },
@@ -71,6 +64,8 @@ const useStyles = makeStyles((theme) => ({
     color: "#4e7779",
     "&:hover": {
       backgroundColor: "transparent",
+      color: "#8e8f27",
+      transition: "all 0.4s ease 0s",
     },
   },
 }));
@@ -174,11 +169,7 @@ export const Work = () => {
                     <div key={step.label}>
                       {Math.abs(activeStep1 - index) <= 2 ? (
                         <div class="container">
-                          <Box className={classes.box}
-                            component="img"
-                            src={step.imgPath}
-                            alt={step.label}
-                          />
+                          <img class="contain" src={step.imgPath} alt={step.label} />
                           <div class="overlay">
                             <div class="icon">
                               <i class="fa fa-search"></i>
@@ -245,11 +236,7 @@ export const Work = () => {
                     <div key={step.label}>
                       {Math.abs(activeStep2 - index) <= 2 ? (
                         <div class="container">
-                          <Box className={classes.box}
-                            component="img"
-                            src={step.imgPath}
-                            alt={step.label}
-                          />
+                          <img class="contain" src={step.imgPath} alt={step.label} />
                           <div class="overlay">
                             <div class="icon">
                               <i class="fa fa-search"></i>
