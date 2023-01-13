@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
       height: "6vh",
     },
   },
-  text: {
+  link: {
     textDecoration: "none",
     color: "#455442",
     "&:hover": {
@@ -24,10 +24,7 @@ const useStyles = makeStyles((theme) => ({
       paddingRight: "0.5rem",
       transition: "all 0.4s ease 0s",
     },
-    "&:active": {
-      color: "#8e8f27",
-    }
-  },
+  }
 }));
 
 export const SideNavbar = () => {
@@ -47,33 +44,42 @@ export const SideNavbar = () => {
         <Link href="/#"
           onClick={() => setActiveNav("#")}
           underline="none"
+          className={classes.link}
         >
-          <Typography variant="body1" className={classes.text}>HOME</Typography>
+          <Typography variant="body1">HOME</Typography>
         </Link>
 
         <Link href="#about"
           onClick={() => setActiveNav("#about")}
           underline="none"
+          className={classes.link}
         >
-          <Typography variant="body1" className={classes.text}>ABOUT</Typography>
+          <Typography variant="body1">ABOUT</Typography>
         </Link>
 
         <Link href="#work"
           onClick={() => setActiveNav("#work")}
           underline="none"
+          className={classes.link}
         >
-          <Typography variant="body1" className={classes.text}>WORK</Typography>
+          <Typography variant="body1">WORK</Typography>
         </Link>
 
         <Link href="#contact"
           onClick={() => setActiveNav("#contact")}
           underline="none"
+          className={classes.link}
         >
-          <Typography variant="body1" className={classes.text}>CONTACT</Typography>
+          <Typography variant="body1">CONTACT</Typography>
         </Link>
 
-        <Link href={ResumePDF} target="_blank" rel="noopener noreferrer" underline="none">
-          <Typography className={classes.text}>RESUME</Typography>
+        <Link href={ResumePDF}
+          target="_blank"
+          rel="noopener noreferrer"
+          underline="none"
+          className={classes.link}
+        >
+          <Typography variant="body1">RESUME</Typography>
         </Link>
       </Toolbar>
     </AppBar>

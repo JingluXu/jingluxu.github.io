@@ -3,7 +3,6 @@ import { Container, Typography, Avatar, Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import { Link, Tooltip, IconButton, Zoom } from "@material-ui/core";
 import Resume from "../../assets/resume.json";
 
@@ -51,16 +50,25 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-between",
     marginTop: "5%",
   },
-  cardmedia: {
-    height: 150, width: 150, borderRadius: "50%",
-    "&:hover": {
-      transform: "scale(1.5)",
+  imgBox: {
+    overflow: "hidden",
+    borderRadius: "50%",
+    margin: "0.5vw",
+    "& $img": {
+      display: "block",
+      height: "10vw",
+      objectFit: "contain",
       transition: "all 0.4s ease 0s",
+      [theme.breakpoints.down("md")]: {
+        height: "15vw",
+      },
     },
-    [theme.breakpoints.down("md")]: {
-      height: 80, width: 80,
+    "&:hover": {
+      "& $img": {
+        transform: "scale(2)",
+      },
     },
-  }
+  },
 }));
 
 const skills = [
@@ -175,19 +183,19 @@ export const About = () => {
               Currently, I am working on the bird series.</Typography>
             <div className={classes.artwork}>
               <Tooltip title="Little Penguin/Kororā" placement="left" TransitionComponent={Zoom}>
-                <CardMedia className={classes.cardmedia}
-                  image={blue}
-                />
+                <div className={classes.imgBox}>
+                  <img src={blue} alt="penguin"/>
+                </div>
               </Tooltip>
               <Tooltip title="New Zealand Pigeon/Kererū" placement="left" TransitionComponent={Zoom}>
-                <CardMedia className={classes.cardmedia}
-                  image={kereru}
-                />
+                <div className={classes.imgBox}>
+                  <img src={kereru} alt="kereru"/>
+                </div>
               </Tooltip>
               <Tooltip title="Recessive Red Domestic Pigeon" placement="left" TransitionComponent={Zoom}>
-                <CardMedia className={classes.cardmedia}
-                  image={brown}
-                />
+                <div className={classes.imgBox}>
+                  <img src={brown} alt="pigeon"/>
+                </div>
               </Tooltip>
             </div>
           </div>

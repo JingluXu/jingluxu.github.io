@@ -16,7 +16,6 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "row",
     [theme.breakpoints.down("md")]: {
       flexDirection: "column",
-      maxWidth: "85%",
     },
   },
   formwrapper: {
@@ -27,18 +26,17 @@ const useStyles = makeStyles((theme) => ({
     padding: "2em",
     backgroundColor: "#ffffff",
     maxWidth: "45%",
-    marginLeft: "3%",
     [theme.breakpoints.down("md")]: {
       marginTop: "3%",
-      maxWidth: "85%",
-      marginLeft: 0,
+      maxWidth: "100%",
     },
   },
   message: {
-    marginRight: "5%",
+    marginRight: "8%",
     [theme.breakpoints.down("md")]: {
       maxWidth: "85%",
       marginTop: "3%",
+      maxWidth: "100%",
     },
   },
   button: {
