@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     height: "calc(400px - 11vw)",
     [theme.breakpoints.down("md")]: {
-      height: "calc(400px - 15vw)",
+      height: "calc(450px - 25vw)",
     },
   },
   stepper: {
