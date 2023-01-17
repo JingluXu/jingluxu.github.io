@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#455442",
     "&:hover": {
       color: "#8e8f27",
-      paddingRight: "0.5rem",
+      textDecoration: "underline",
       transition: "all 0.4s ease 0s",
     },
   }

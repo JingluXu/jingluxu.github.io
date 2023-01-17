@@ -46,7 +46,14 @@ const useStyles = makeStyles((theme) => ({
     padding: "0.5rem 1rem",
     "&:hover": {
       backgroundColor: "#677c77",
-      padding: "0.5rem 1.5rem",
+      transition: "all 0.4s ease 0s",
+    },
+  },
+  link: {
+    textDecoration: "none",
+    color: "#8e8f27",
+    "&:hover": {
+      textDecoration: "underline",
       transition: "all 0.4s ease 0s",
     },
   },
@@ -82,7 +89,7 @@ export const Contact = () => {
     <section id="contact">
       <Container component="main" className={classes.main}>
         <div className={classes.message}><Typography gutterBottom variant="h2">Want to work together?</Typography>
-          <Typography gutterBottom variant="body1">Drop me an email at <Link href="mailto:mixlulu@gmail.com" underline="none" style={{ color: "#8e8f27", }}>{Resume.basics.email}</Link> or simply fill out the form and I will reply to you soon.</Typography>
+          <Typography gutterBottom variant="body1">Drop me an email at <Link className={classes.link} href="mailto:mixlulu@gmail.com">{Resume.basics.email}</Link> or simply fill out the form and I will reply to you soon.</Typography>
           <Typography gutterBottom variant="body1">Let's create something beautiful and impactful.</Typography>
         </div>
         <div className={classes.formwrapper}>
