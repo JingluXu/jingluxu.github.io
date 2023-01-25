@@ -3,7 +3,7 @@
     <g fill="#f8f8f5">
         <circle r="90" cx="400" cy="500"></circle>
         <circle r="130" cx="283" cy="220"></circle>
-        <circle r="45" cx="75" cy="70"></circle>
-        <circle r="65" cx="650" cy="200"></circle>
+        <!-- <circle r="45" cx="75" cy="70"></circle> -->
+        <circle r="55" cx="650" cy="200"></circle>
     </g>
 </svg>
