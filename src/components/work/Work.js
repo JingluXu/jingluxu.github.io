@@ -25,8 +25,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#90c7ca",
   },
   workwrapper: {
-    maxWidth: "70%",
-    marginLeft: "10%",
+    maxWidth: "74%",
+    marginLeft: "13%",
     paddingTop: "7%",
     paddingBottom: "7%",
     justifyContent: "space-between",
@@ -133,7 +133,7 @@ export const Work = () => {
   const handleBack1 = () => {
     setActiveStep1((prevActiveStep) => prevActiveStep - 1);
   };
-  const handleStepChange1 = (step: number) => {
+  const handleStepChange1 = step => {
     setActiveStep1(step);
   };
 
@@ -144,7 +144,7 @@ export const Work = () => {
   const handleBack2 = () => {
     setActiveStep2((prevActiveStep) => prevActiveStep - 1);
   };
-  const handleStepChange2 = (step: number) => {
+  const handleStepChange2 = step => {
     setActiveStep2(step);
   };
 

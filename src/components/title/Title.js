@@ -6,8 +6,8 @@ import Resume from "../../assets/resume.json";
 
 const useStyles = makeStyles((theme) => ({
   title: {
-    maxWidth: "85%",
-    marginLeft: "10%",
+    maxWidth: "74%",
+    marginLeft: "13%",
     paddingTop: "35vh",
     paddingBottom: "16%",
     display: "flex",

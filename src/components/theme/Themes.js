@@ -59,9 +59,15 @@ export const Theme =
         color: "#455442",
       },
       body1: {
-        fontSize: [pxToRem(18), "!important"],
+        fontSize: [pxToRem(16), "!important"],
         [breakpoints.down("md")]: {
-          fontSize: [pxToRem(14), "!important"],
+          fontSize: [pxToRem(12), "!important"],
+        }
+      },
+      body2: {
+        fontSize: [pxToRem(14), "!important"],
+        [breakpoints.down("md")]: {
+          fontSize: [pxToRem(12), "!important"],
         }
       },
       subtitle1: {

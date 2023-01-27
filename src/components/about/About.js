@@ -20,8 +20,8 @@ const useStyles = makeStyles((theme) => ({
     minHeight: "100vh",
   },
   aboutmewrapper: {
-    maxWidth: "70%",
-    marginLeft: "10%",
+    maxWidth: "74%",
+    marginLeft: "13%",
     display: "flex",
     flexDirection: "row",
     [theme.breakpoints.down("md")]: {
@@ -184,17 +184,17 @@ export const About = () => {
             <div className={classes.artwork}>
               <Tooltip title="Little Penguin/Kororā" placement="left" TransitionComponent={Zoom}>
                 <div className={classes.imgBox}>
-                  <img src={blue} alt="penguin"/>
+                  <img src={blue} alt="penguin" />
                 </div>
               </Tooltip>
               <Tooltip title="New Zealand Pigeon/Kererū" placement="left" TransitionComponent={Zoom}>
                 <div className={classes.imgBox}>
-                  <img src={kereru} alt="kereru"/>
+                  <img src={kereru} alt="kereru" />
                 </div>
               </Tooltip>
               <Tooltip title="Recessive Red Domestic Pigeon" placement="left" TransitionComponent={Zoom}>
                 <div className={classes.imgBox}>
-                  <img src={brown} alt="pigeon"/>
+                  <img src={brown} alt="pigeon" />
                 </div>
               </Tooltip>
             </div>

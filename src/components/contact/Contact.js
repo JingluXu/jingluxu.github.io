@@ -8,8 +8,8 @@ import emailjs from "@emailjs/browser";
 
 const useStyles = makeStyles((theme) => ({
   main: {
-    maxWidth: "70%",
-    marginLeft: "10%",
+    maxWidth: "74%",
+    marginLeft: "13%",
     paddingTop: "15%",
     paddingBottom: "15%",
     display: "flex",
@@ -34,7 +34,6 @@ const useStyles = makeStyles((theme) => ({
   message: {
     marginRight: "8%",
     [theme.breakpoints.down("md")]: {
-      maxWidth: "85%",
       marginTop: "3%",
       maxWidth: "100%",
     },
