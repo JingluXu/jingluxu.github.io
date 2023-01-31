@@ -33,8 +33,16 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: "35%",
     marginRight: "5%",
     [theme.breakpoints.down("md")]: {
-      maxWidth: "70%",
+      maxWidth: "85%",
       marginBottom: "5%",
+    },
+  },
+  avatar: {
+    margin: "6%",
+    height: "60%",
+    width: "60%",
+    [theme.breakpoints.down("md")]: {
+      maxWidth: "30%",
     },
   },
   intro: {
@@ -134,14 +142,11 @@ export const About = () => {
                 alt="profile"
                 src={profile}
                 variant="circular"
-                style={{
-                  margin: "6%",
-                  height: "70%",
-                  width: "70%",
-                }}
+                className={classes.avatar}
               />
               <CardContent style={{
                 backgroundColor: "#ffffff",
+                padding: "5%",
               }}>
                 <Typography gutterBottom variant="h4" style={{ fontWeight: 700, }} align="center">{Resume.basics.name}</Typography>
                 <Typography gutterBottom variant="subtitle2" align="center"><i class="fa fa-suitcase" aria-hidden="true"></i> {Resume.basics.job1} & {Resume.basics.job2}</Typography>

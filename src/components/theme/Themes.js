@@ -42,7 +42,7 @@ export const Theme =
       },
       h4: {
         color: "#455442",
-        fontSize: [pxToRem(50), "!important"],
+        fontSize: [pxToRem(45), "!important"],
         fontFamily: ["'Century Gothic', CenturyGothic, AppleGothic, sans-serif", "!important"],
         [breakpoints.down("md")]: {
           fontSize: [pxToRem(25), "!important"],
