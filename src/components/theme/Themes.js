@@ -15,7 +15,7 @@ export const Theme =
         fontWeight: [700, "!important"],
         color: "#4e7779",
         fontSize: [pxToRem(110), "!important"],
-        fontFamily: ["Arial Narrow, Arial, sans-serif", "!important"],
+        fontFamily: ["'Arial Narrow', Arial, sans-serif", "!important"],
         [breakpoints.down("md")]: {
           fontSize: [pxToRem(60), "!important"],
         }
@@ -24,7 +24,7 @@ export const Theme =
         color: "#677C77",
         fontWeight: [700, "!important"],
         fontSize: [pxToRem(70), "!important"],
-        fontFamily: ["Arial Narrow, Arial, sans-serif", "!important"],
+        fontFamily: ["'Arial Narrow', Arial, sans-serif", "!important"],
         [breakpoints.down("md")]: {
           fontSize: [pxToRem(40), "!important"],
         }
@@ -33,7 +33,7 @@ export const Theme =
         color: "#4e7779",
         fontWeight: [500, "!important"],
         fontSize: [pxToRem(40), "!important"],
-        fontFamily: ["Arial Narrow, Arial, sans-serif", "!important"],
+        fontFamily: ["'Arial Narrow', Arial, sans-serif", "!important"],
         [breakpoints.down("md")]: {
           fontSize: [pxToRem(30), "!important"],
         }
@@ -41,14 +41,14 @@ export const Theme =
       h4: {
         color: "#455442",
         fontSize: [pxToRem(50), "!important"],
-        fontFamily: ["Arial Narrow, Arial, sans-serif", "!important"],
+        fontFamily: ["'Arial Narrow', Arial, sans-serif", "!important"],
         [breakpoints.down("md")]: {
           fontSize: [pxToRem(25), "!important"],
         }
       },
       h6: {
         color: "#455442",
-        fontFamily: ["Arial Narrow, Arial, sans-serif", "!important"],
+        fontFamily: ["'Arial Narrow', Arial, sans-serif", "!important"],
       },
       body1: {
         fontSize: [pxToRem(16), "!important"],
@@ -59,7 +59,7 @@ export const Theme =
       },
       body2: {
         fontSize: [pxToRem(14), "!important"],
-        fontFamily: ["Arial Narrow, Arial, sans-serif", "!important"],
+        fontFamily: ["'Arial Narrow', Arial, sans-serif", "!important"],
         [breakpoints.down("md")]: {
           fontSize: [pxToRem(12), "!important"],
         }
