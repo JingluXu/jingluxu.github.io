@@ -32,9 +32,10 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   message: {
-    marginRight: "8%",
+    marginRight: "10%",
     [theme.breakpoints.down("md")]: {
-      marginTop: "3%",
+      marginTop: "10%",
+      marginRight: "0%",
       maxWidth: "100%",
     },
   },

@@ -10,11 +10,11 @@ const breakpoints = createBreakpoints({});
 export const Theme =
   createTheme({
     typography: {
-      fontSize: 16,
+      fontSize: 14,
       h1: {
         fontWeight: [700, "!important"],
         color: "#4e7779",
-        fontSize: [pxToRem(110), "!important"],
+        fontSize: [pxToRem(100), "!important"],
         fontFamily: ["'Arial Narrow', Arial, sans-serif", "!important"],
         [breakpoints.down("md")]: {
           fontSize: [pxToRem(60), "!important"],
@@ -23,7 +23,7 @@ export const Theme =
       h2: {
         color: "#677C77",
         fontWeight: [700, "!important"],
-        fontSize: [pxToRem(70), "!important"],
+        fontSize: [pxToRem(65), "!important"],
         fontFamily: ["'Arial Narrow', Arial, sans-serif", "!important"],
         [breakpoints.down("md")]: {
           fontSize: [pxToRem(40), "!important"],
@@ -40,7 +40,7 @@ export const Theme =
       },
       h4: {
         color: "#455442",
-        fontSize: [pxToRem(50), "!important"],
+        fontSize: [pxToRem(45), "!important"],
         fontFamily: ["'Arial Narrow', Arial, sans-serif", "!important"],
         [breakpoints.down("md")]: {
           fontSize: [pxToRem(25), "!important"],
@@ -51,7 +51,7 @@ export const Theme =
         fontFamily: ["'Arial Narrow', Arial, sans-serif", "!important"],
       },
       body1: {
-        fontSize: [pxToRem(16), "!important"],
+        fontSize: [pxToRem(15), "!important"],
         fontFamily: ["Arial, Helvetica, sans-serif", "!important"],
         [breakpoints.down("md")]: {
           fontSize: [pxToRem(12), "!important"],
@@ -66,9 +66,10 @@ export const Theme =
       },
       subtitle1: {
         color: "#677c77",
+        fontSize: [pxToRem(14), "!important"],
         fontFamily: ["Arial, Helvetica, sans-serif", "!important"],
         [breakpoints.down("md")]: {
-          fontSize: [pxToRem(15), "!important"],
+          fontSize: [pxToRem(13), "!important"],
         }
       },
       subtitle2: {
