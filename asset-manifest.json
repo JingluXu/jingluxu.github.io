@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.25b64aba.css",
-    "main.js": "/static/js/main.79c15cf6.js",
+    "main.js": "/static/js/main.61e3c436.js",
     "static/js/333.a4d81bb4.chunk.js": "/static/js/333.a4d81bb4.chunk.js",
     "static/media/profile.png": "/static/media/profile.358c7ab95027ac6bd36a.png",
     "static/media/kereru.png": "/static/media/kereru.4f0e57b3fa2868e9e61a.png",
     "static/media/blue.png": "/static/media/blue.48c97e15d428bda1e527.png",
     "static/media/brown.png": "/static/media/brown.c51e1fbdc47650b2057e.png",
     "static/media/automarker.png": "/static/media/automarker.22ec9fe3ab4b224e77a8.png",
-    "static/media/jinglu-xu-resume.pdf": "/static/media/jinglu-xu-resume.ad9eb6ce09a539326131.pdf",
+    "static/media/jinglu-xu-resume.pdf": "/static/media/jinglu-xu-resume.c2f4c95fba817d794575.pdf",
     "static/media/saa.png": "/static/media/saa.5de5ac5041c48c198d8b.png",
     "static/media/terraform002.png": "/static/media/terraform002.e9e11e12f029918926be.png",
     "static/media/sc900.png": "/static/media/sc900.f7a894e9b2d75b580c5a.png",
@@ -16,11 +16,11 @@
     "static/media/az900.png": "/static/media/az900.dd49b3c54249c87368c6.png",
     "index.html": "/index.html",
     "main.25b64aba.css.map": "/static/css/main.25b64aba.css.map",
-    "main.79c15cf6.js.map": "/static/js/main.79c15cf6.js.map",
+    "main.61e3c436.js.map": "/static/js/main.61e3c436.js.map",
     "333.a4d81bb4.chunk.js.map": "/static/js/333.a4d81bb4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.25b64aba.css",
-    "static/js/main.79c15cf6.js"
+    "static/js/main.61e3c436.js"
   ]
 }
