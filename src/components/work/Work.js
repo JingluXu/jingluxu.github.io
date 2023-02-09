@@ -73,6 +73,18 @@ const useStyles = makeStyles((theme) => ({
 const work = [
   {
     id: 1,
+    title: "Software Development",
+    images: [
+      {
+        label: "Automarker System for The University of Auckland",
+        details: "Enhanced an automarking system used in several algorithms courses at the university. Fixed several previous bugs and added new dynamic features to provide a great user experience (e.g., let users control the table\"s sorting order). The system was built on LAMP + Java stack.",
+        imgPath: automarker,
+        link: "http://www.cs.auckland.ac.nz/automated-marker",
+      },
+    ],
+  },
+  {
+    id: 2,
     title: "Cloud Engineering",
     images: [
       {
@@ -105,18 +117,7 @@ const work = [
         imgPath: terraform002,
         link: "https://www.credly.com/badges/17a86e01-fb25-471d-b729-b41cc5063301/",
       },
-    ],
-  },
-  {
-    id: 2,
-    title: "Software Development",
-    images: [
-      {
-        label: "Automarker System for The University of Auckland",
-        details: "Enhanced an automarking system used in several algorithms courses at the university. Fixed several previous bugs and added new dynamic features to provide a great user experience (e.g., let users control the table\"s sorting order). The system was built on LAMP + Java stack.",
-        imgPath: automarker,
-        link: "http://www.cs.auckland.ac.nz/automated-marker",
-      },]
+    ]
   },
 ];
 
@@ -153,10 +154,10 @@ export const Work = () => {
 
       <Grid container className={classes.main}>
         <div className={classes.workwrapper}>
-          {/* Cloud */}
+          {/* Software */}
           <div className={classes.cardwrapper}>
             <Grid item key={work[0].id}>
-              <Typography gutterBottom variant="h3">Cloud <br /> Engineering</Typography>
+              <Typography gutterBottom variant="h3">Software <br /> Development</Typography>
               <Link href={work[0].images[activeStep1].link} target="_blank">
                 <AutoPlaySwipeableViews
                   axis={theme.direction === "rtl" ? "x-reverse" : "x"}
@@ -220,10 +221,10 @@ export const Work = () => {
             </Grid>
           </div>
 
-          {/* Software */}
+          {/* Cloud */}
           <div className={classes.cardwrapper}>
             <Grid item key={work[1].id}>
-              <Typography gutterBottom variant="h3">Software <br /> Development</Typography>
+              <Typography gutterBottom variant="h3">Cloud <br /> Engineering</Typography>
               <Link href={work[1].images[activeStep2].link} target="_blank">
                 <AutoPlaySwipeableViews
                   axis={theme.direction === "rtl" ? "x-reverse" : "x"}

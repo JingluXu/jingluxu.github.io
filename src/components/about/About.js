@@ -95,9 +95,9 @@ const skills = [
     title: "SOFTWARE DEVELOPMENT",
     description: [
       { text: "React", id: 1 },
-      { text: "Python", id: 2 },
-      { text: "Node.js", id: 3 },
-      { text: "Java", id: 4 },
+      { text: "Java", id: 2 },
+      { text: "Python", id: 3 },
+      { text: "MySQL", id: 4 },
     ],
   },
 ];
@@ -164,10 +164,9 @@ export const About = () => {
             <Grid container spacing={4}>
               <Grid item md={6}>
                 <Typography gutterBottom variant="subtitle2">
-                  <i class="fa fa-cloud" aria-hidden="true"></i> {skills[0].title}
+                  <i class="fa fa-code" aria-hidden="true"></i> {skills[1].title}
                 </Typography>
-
-                {skills[0].description.map((descript) =>
+                {skills[1].description.map((descript) =>
                   <Typography gutterBottom variant="subtitle2">
                     <i class="fa fa-check" aria-hidden="true"></i> {descript.text}
                   </Typography>
@@ -175,9 +174,10 @@ export const About = () => {
               </Grid>
               <Grid item md={6}>
                 <Typography gutterBottom variant="subtitle2">
-                  <i class="fa fa-code" aria-hidden="true"></i> {skills[1].title}
+                  <i class="fa fa-cloud" aria-hidden="true"></i> {skills[0].title}
                 </Typography>
-                {skills[1].description.map((descript) =>
+
+                {skills[0].description.map((descript) =>
                   <Typography gutterBottom variant="subtitle2">
                     <i class="fa fa-check" aria-hidden="true"></i> {descript.text}
                   </Typography>

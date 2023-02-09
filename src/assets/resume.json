@@ -2,8 +2,8 @@
     "basics": {
         "name": "Jinglu Xu",
         "email": "mixlulu@gmail.com",
-        "job1": "Cloud Engineer",
-        "job2": "Software Developer",
+        "job1": "Software Developer",
+        "job2": "Cloud Engineer",
         "url": "https://jingluxu.github.io/",
         "location": {
             "city": "Auckland",
