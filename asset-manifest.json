@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.25b64aba.css",
-    "main.js": "/static/js/main.f1037be0.js",
+    "main.js": "/static/js/main.fb1437eb.js",
     "static/js/333.a4d81bb4.chunk.js": "/static/js/333.a4d81bb4.chunk.js",
     "static/media/profile.png": "/static/media/profile.358c7ab95027ac6bd36a.png",
     "static/media/kereru.png": "/static/media/kereru.4f0e57b3fa2868e9e61a.png",
     "static/media/blue.png": "/static/media/blue.48c97e15d428bda1e527.png",
     "static/media/brown.png": "/static/media/brown.c51e1fbdc47650b2057e.png",
+    "static/media/kokako.png": "/static/media/kokako.e3bb1263708e8a29a414.png",
     "static/media/automarker.png": "/static/media/automarker.22ec9fe3ab4b224e77a8.png",
     "static/media/jinglu-xu-resume.pdf": "/static/media/jinglu-xu-resume.4d1d95b5f51d459eef91.pdf",
     "static/media/saa.png": "/static/media/saa.5de5ac5041c48c198d8b.png",
@@ -17,11 +18,11 @@
     "static/media/terraform002.png": "/static/media/terraform002.7ae2c4a7a1999c132641.png",
     "index.html": "/index.html",
     "main.25b64aba.css.map": "/static/css/main.25b64aba.css.map",
-    "main.f1037be0.js.map": "/static/js/main.f1037be0.js.map",
+    "main.fb1437eb.js.map": "/static/js/main.fb1437eb.js.map",
     "333.a4d81bb4.chunk.js.map": "/static/js/333.a4d81bb4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.25b64aba.css",
-    "static/js/main.f1037be0.js"
+    "static/js/main.fb1437eb.js"
   ]
 }
