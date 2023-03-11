@@ -10,6 +10,7 @@ import profile from "../../assets/profile.png";
 import blue from "../../assets/birds/blue.png";
 import kereru from "../../assets/birds/kereru.png";
 import brown from "../../assets/birds/brown.png";
+import kokako from "../../assets/birds/kokako.png";
 
 const useStyles = makeStyles((theme) => ({
   aboutme: {
@@ -61,10 +62,10 @@ const useStyles = makeStyles((theme) => ({
   imgBox: {
     overflow: "hidden",
     borderRadius: "50%",
-    margin: "0.5vw",
+    margin: "0.3vw",
     "& $img": {
       display: "block",
-      height: "10vw",
+      height: "8vw",
       objectFit: "contain",
       transition: "all 0.4s ease 0s",
       [theme.breakpoints.down("md")]: {
@@ -200,6 +201,11 @@ export const About = () => {
               <Tooltip title="Recessive Red Domestic Pigeon" placement="left" TransitionComponent={Zoom}>
                 <div className={classes.imgBox}>
                   <img src={brown} alt="pigeon" />
+                </div>
+              </Tooltip>
+              <Tooltip title="Kōkako" placement="left" TransitionComponent={Zoom}>
+                <div className={classes.imgBox}>
+                  <img src={kokako} alt="kokako" />
                 </div>
               </Tooltip>
             </div>
