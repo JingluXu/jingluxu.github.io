@@ -19,6 +19,7 @@ import sc900 from "../../assets/certificates/sc900.png";
 import terraform002 from "../../assets/certificates/terraform002.png";
 import automarker from "../../assets/automarker.png";
 import icp from "../../assets/certificates/icp.png";
+import gardenfriends from "../../assets/gardenfriends.png";
 
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -81,6 +82,12 @@ const work = [
         details: "Enhanced an automarking system used in several algorithms courses at the university. Fixed several previous bugs and added new dynamic features to provide a great user experience (e.g., let users control the table\"s sorting order). The system was built on LAMP + Java stack.",
         imgPath: automarker,
         link: "http://www.cs.auckland.ac.nz/automated-marker",
+      },
+      {
+        label: "Birdwatching Website",
+        details: "Coming soon...",
+        imgPath: gardenfriends,
+        // link: "",
       },
       {
         label: "ICAgile Certified Professional",
