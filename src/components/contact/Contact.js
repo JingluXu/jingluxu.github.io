@@ -82,7 +82,7 @@ export const Contact = () => {
       }, (error) => {
         console.log(error.text);
       });
-    e.target.reset()
+    e.target.reset();
   };
 
   return (
@@ -96,15 +96,14 @@ export const Contact = () => {
           <form ref={form} onSubmit={sendEmail}>
             <TextField
               required
-              id="outlined-name-input"
               label="Name"
               type="text"
               name="name"
               variant="outlined"
+              autoFocus
             />
             <TextField
               required
-              id="outlined-password-input"
               label="Email"
               type="email"
               name="email"
@@ -112,7 +111,6 @@ export const Contact = () => {
             />
             <TextField
               required
-              id="outlined-password-input"
               label="Message"
               type="textarea"
               multiline
