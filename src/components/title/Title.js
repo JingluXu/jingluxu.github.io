@@ -24,7 +24,7 @@ export const Title = () => {
           <Typography display="inline" variant="h4">Hi, I'm </Typography>
           <Typography display="inline" gutterBottom variant="h1">{Resume.basics.name}</Typography>
           <Typography display="inline" variant="h4">.</Typography>
-          <Typography variant="h4">A {Resume.basics.job1.toLowerCase()} & {Resume.basics.job2.toLowerCase()}.</Typography>
+          <Typography variant="h4">A {Resume.basics.job.toLowerCase()}.</Typography>
         </div>
       </Container>
     </section>

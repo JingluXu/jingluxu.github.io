@@ -97,7 +97,7 @@ const skills = [
     description: [
       { text: "React", id: 1 },
       { text: "Java", id: 2 },
-      { text: "Python", id: 3 },
+      { text: "Gosu", id: 3 },
       { text: "MySQL", id: 4 },
     ],
   },
@@ -150,7 +150,7 @@ export const About = () => {
                 padding: "5%",
               }}>
                 <Typography gutterBottom variant="h4" style={{ fontWeight: 700, }} align="center">{Resume.basics.name}</Typography>
-                <Typography gutterBottom variant="subtitle2" align="center"><i class="fa fa-suitcase" aria-hidden="true"></i> {Resume.basics.job1} & {Resume.basics.job2}</Typography>
+                <Typography gutterBottom variant="subtitle2" align="center"><i class="fa fa-suitcase" aria-hidden="true"></i> {Resume.basics.job}</Typography>
                 <Typography gutterBottom variant="subtitle2" align="center"><i class="fa fa-graduation-cap" aria-hidden="true"></i> MSc, BSc, BBA</Typography>
                 <Typography gutterBottom variant="subtitle2" align="center"><i class="fa fa-map-pin" aria-hidden="true"></i> {Resume.basics.location.city}, {Resume.basics.location.country}</Typography>
                 <Typography gutterBottom align="center">{socialItems}</Typography>
@@ -158,9 +158,8 @@ export const About = () => {
             </Card></div>
           <div className={classes.intro}>
             <Typography gutterBottom variant="body1">HELLO! 你好! KIA ORA!</Typography><br />
-            <Typography gutterBottom variant="body1">I have over one year of experience in designing, configuing, and maintaining cloud infrastructure defined as code in two large organizations.
-              In my short time at these organizations, I've already contributed to over four projects and cleared five cloud related certificates.
-              In my previous role, I was a MSc (Computer Science) student and a web developer.</Typography><br />
+            <Typography gutterBottom variant="body1">I have over two years of experience in designing, developing, and maintaining software applications in several large organizations.
+              Currently, I am working as a Guidewire developer at IAG. In my previous role, I was a cloud engineer.</Typography><br />
             <Typography gutterBottom variant="body1">Here are a few technologies I've been working with recently:</Typography>
             <Grid container spacing={4}>
               <Grid item md={6}>
@@ -186,7 +185,7 @@ export const About = () => {
               </Grid></Grid><br />
             <Typography gutterBottom variant="body1">When not working or coding my next project,
               I love painting in a bunch of different mediums, including arylic, coloured pencil, gouache, and watercolour.
-              Currently, I am working on the bird series.</Typography>
+              My most recent project is the bird series.</Typography>
             <div className={classes.artwork}>
               <Tooltip title="Little Penguin/Kororā" placement="left" TransitionComponent={Zoom}>
                 <div className={classes.imgBox}>

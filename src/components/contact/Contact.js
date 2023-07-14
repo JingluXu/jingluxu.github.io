@@ -100,7 +100,6 @@ export const Contact = () => {
               type="text"
               name="name"
               variant="outlined"
-              autoFocus
             />
             <TextField
               required
