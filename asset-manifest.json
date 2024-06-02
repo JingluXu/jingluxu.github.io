@@ -1,29 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.25b64aba.css",
-    "main.js": "/static/js/main.ab4bda32.js",
+    "main.css": "/static/css/main.ac4aeb64.css",
+    "main.js": "/static/js/main.6ff5df20.js",
     "static/js/333.a4d81bb4.chunk.js": "/static/js/333.a4d81bb4.chunk.js",
-    "static/media/profile.png": "/static/media/profile.358c7ab95027ac6bd36a.png",
-    "static/media/kereru.png": "/static/media/kereru.4f0e57b3fa2868e9e61a.png",
-    "static/media/blue.png": "/static/media/blue.48c97e15d428bda1e527.png",
-    "static/media/brown.png": "/static/media/brown.c51e1fbdc47650b2057e.png",
-    "static/media/kokako.png": "/static/media/kokako.e3bb1263708e8a29a414.png",
-    "static/media/gardenfriends.png": "/static/media/gardenfriends.e317a8e0e03dd75657ce.png",
-    "static/media/automarker.png": "/static/media/automarker.22ec9fe3ab4b224e77a8.png",
-    "static/media/jinglu-xu-resume.pdf": "/static/media/jinglu-xu-resume.43b76155492f3844c215.pdf",
+    "static/media/kereru.png": "/static/media/kereru.0cbc20f292ae40d08852.png",
+    "static/media/blue.png": "/static/media/blue.e65e7d92e0f6f1672943.png",
+    "static/media/brown.png": "/static/media/brown.fb74c5e9b2a3b0fb6829.png",
+    "static/media/profile.png": "/static/media/profile.12e38b6662ee38896bad.png",
+    "static/media/automarker.png": "/static/media/automarker.ba0a02a12cadd655cc2a.png",
+    "static/media/jinglu-xu-resume.pdf": "/static/media/jinglu-xu-resume.ea25eb91b4d4307e83f0.pdf",
     "static/media/saa.png": "/static/media/saa.5de5ac5041c48c198d8b.png",
-    "static/media/icp.png": "/static/media/icp.36304259c27fefe3e2eb.png",
+    "static/media/terraform002.png": "/static/media/terraform002.e9e11e12f029918926be.png",
     "static/media/sc900.png": "/static/media/sc900.f7a894e9b2d75b580c5a.png",
     "static/media/dp900.png": "/static/media/dp900.2bf170778bbaf7da5655.png",
     "static/media/az900.png": "/static/media/az900.dd49b3c54249c87368c6.png",
-    "static/media/terraform002.png": "/static/media/terraform002.7ae2c4a7a1999c132641.png",
     "index.html": "/index.html",
-    "main.25b64aba.css.map": "/static/css/main.25b64aba.css.map",
-    "main.ab4bda32.js.map": "/static/js/main.ab4bda32.js.map",
+    "main.ac4aeb64.css.map": "/static/css/main.ac4aeb64.css.map",
+    "main.6ff5df20.js.map": "/static/js/main.6ff5df20.js.map",
     "333.a4d81bb4.chunk.js.map": "/static/js/333.a4d81bb4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.25b64aba.css",
-    "static/js/main.ab4bda32.js"
+    "static/css/main.ac4aeb64.css",
+    "static/js/main.6ff5df20.js"
   ]
 }
