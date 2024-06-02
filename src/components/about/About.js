@@ -81,24 +81,23 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const skills = [
+  // {
+  //   id: 1,
+  //   title: "CLOUD ENGINEERING",
+  //   description: [
+  //     { text: "Infrastructure as Code", id: 1 },
+  //     { text: "Terraform", id: 2 },
+  //     { text: "AWS", id: 3 },
+  //     { text: "Azure", id: 4 },
+  //   ],
+  // },
   {
     id: 1,
-    title: "CLOUD ENGINEERING",
     description: [
-      { text: "Infrastructure as Code", id: 1 },
-      { text: "Terraform", id: 2 },
+      { text: "Guidewire ClaimCenter", id: 1 },
+      { text: "RESTful API", id: 2 },
       { text: "AWS", id: 3 },
-      { text: "Azure", id: 4 },
-    ],
-  },
-  {
-    id: 2,
-    title: "SOFTWARE DEVELOPMENT",
-    description: [
-      { text: "React", id: 1 },
-      { text: "Java", id: 2 },
-      { text: "Gosu", id: 3 },
-      { text: "MySQL", id: 4 },
+      { text: "Kafka", id: 4 },
     ],
   },
 ];
@@ -158,31 +157,32 @@ export const About = () => {
             </Card></div>
           <div className={classes.intro}>
             <Typography gutterBottom variant="body1">HELLO! 你好! KIA ORA!</Typography><br />
-            <Typography gutterBottom variant="body1">I have over two years of experience in designing, developing, and maintaining software applications in several large organizations.
-              Currently, I am working as a Guidewire developer at IAG. In my previous role, I was a cloud engineer.</Typography><br />
+            <Typography gutterBottom variant="body1">I have over four years of experience in designing, developing, and maintaining software applications in several large organizations.
+              Currently, I am working as a Guidewire ClaimCenter Developer at Insurance Australia Group.</Typography><br />
             <Typography gutterBottom variant="body1">Here are a few technologies I've been working with recently:</Typography>
             <Grid container spacing={4}>
               <Grid item md={6}>
+                {/* <Typography gutterBottom variant="subtitle2">
+                  <i class="fa fa-code" aria-hidden="true"></i> {skills[0].title}
+                </Typography> */}
+                {skills[0].description.map((descript) =>
+                  <Typography gutterBottom variant="subtitle2">
+                    <i class="fa fa-code" aria-hidden="true"></i> {descript.text}
+                  </Typography>
+                )}
+              </Grid>
+              {/* <Grid item md={6}>
                 <Typography gutterBottom variant="subtitle2">
-                  <i class="fa fa-code" aria-hidden="true"></i> {skills[1].title}
+                  <i class="fa fa-cloud" aria-hidden="true"></i> {skills[1].title}
                 </Typography>
+
                 {skills[1].description.map((descript) =>
                   <Typography gutterBottom variant="subtitle2">
                     <i class="fa fa-check" aria-hidden="true"></i> {descript.text}
                   </Typography>
                 )}
-              </Grid>
-              <Grid item md={6}>
-                <Typography gutterBottom variant="subtitle2">
-                  <i class="fa fa-cloud" aria-hidden="true"></i> {skills[0].title}
-                </Typography>
-
-                {skills[0].description.map((descript) =>
-                  <Typography gutterBottom variant="subtitle2">
-                    <i class="fa fa-check" aria-hidden="true"></i> {descript.text}
-                  </Typography>
-                )}
-              </Grid></Grid><br />
+              </Grid> */}
+              </Grid><br />
             <Typography gutterBottom variant="body1">When not working or coding my next project,
               I love painting in a bunch of different mediums, including arylic, coloured pencil, gouache, and watercolour.
               My most recent project is the bird series.</Typography>
