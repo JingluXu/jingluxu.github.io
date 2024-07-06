@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.25b64aba.css",
-    "main.js": "/static/js/main.b1af4233.js",
+    "main.js": "/static/js/main.121ffee1.js",
     "static/js/333.a4d81bb4.chunk.js": "/static/js/333.a4d81bb4.chunk.js",
     "static/media/profile.png": "/static/media/profile.358c7ab95027ac6bd36a.png",
     "static/media/kereru.png": "/static/media/kereru.4f0e57b3fa2868e9e61a.png",
@@ -10,7 +10,7 @@
     "static/media/kokako.png": "/static/media/kokako.e3bb1263708e8a29a414.png",
     "static/media/gardenfriends.png": "/static/media/gardenfriends.e317a8e0e03dd75657ce.png",
     "static/media/automarker.png": "/static/media/automarker.22ec9fe3ab4b224e77a8.png",
-    "static/media/jinglu-xu-resume.pdf": "/static/media/jinglu-xu-resume.fd96454358824c60c22c.pdf",
+    "static/media/jinglu-xu-resume.pdf": "/static/media/jinglu-xu-resume.b79a1ea64227952a2025.pdf",
     "static/media/saa.png": "/static/media/saa.5de5ac5041c48c198d8b.png",
     "static/media/icp.png": "/static/media/icp.36304259c27fefe3e2eb.png",
     "static/media/sc900.png": "/static/media/sc900.f7a894e9b2d75b580c5a.png",
@@ -19,11 +19,11 @@
     "static/media/terraform002.png": "/static/media/terraform002.7ae2c4a7a1999c132641.png",
     "index.html": "/index.html",
     "main.25b64aba.css.map": "/static/css/main.25b64aba.css.map",
-    "main.b1af4233.js.map": "/static/js/main.b1af4233.js.map",
+    "main.121ffee1.js.map": "/static/js/main.121ffee1.js.map",
     "333.a4d81bb4.chunk.js.map": "/static/js/333.a4d81bb4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.25b64aba.css",
-    "static/js/main.b1af4233.js"
+    "static/js/main.121ffee1.js"
   ]
 }
