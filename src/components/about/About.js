@@ -1,16 +1,14 @@
 import React from "react";
-import { Container, Typography, Avatar, Grid } from "@material-ui/core";
+import { Container, Typography, Avatar } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import { Link, Tooltip, IconButton, Zoom } from "@material-ui/core";
 import Resume from "../../assets/resume.json";
+import { Summary } from "./Summary";
+import { Artwork } from "./Artwork";
 
 import profile from "../../assets/profile.png";
-import blue from "../../assets/birds/blue.png";
-import kereru from "../../assets/birds/kereru.png";
-import brown from "../../assets/birds/brown.png";
-import kokako from "../../assets/birds/kokako.png";
 
 const useStyles = makeStyles((theme) => ({
   aboutme: {
@@ -59,48 +57,29 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-between",
     marginTop: "5%",
   },
-  imgBox: {
-    overflow: "hidden",
-    borderRadius: "50%",
-    margin: "0.3vw",
-    "& $img": {
-      display: "block",
-      height: "8vw",
-      objectFit: "contain",
-      transition: "all 0.4s ease 0s",
-      [theme.breakpoints.down("md")]: {
-        height: "15vw",
-      },
-    },
-    "&:hover": {
-      "& $img": {
-        transform: "scale(2)",
-      },
-    },
-  },
 }));
 
-const skills = [
-  // {
-  //   id: 1,
-  //   title: "CLOUD ENGINEERING",
-  //   description: [
-  //     { text: "Infrastructure as Code", id: 1 },
-  //     { text: "Terraform", id: 2 },
-  //     { text: "AWS", id: 3 },
-  //     { text: "Azure", id: 4 },
-  //   ],
-  // },
-  {
-    id: 1,
-    description: [
-      { text: "RESTful API", id: 2 },
-      { text: "AWS", id: 3 },
-      { text: "Kafka", id: 4 },
-      { text: "Guidewire Cloud Platform", id: 1 }
-    ],
-  },
-];
+// const skills = [
+//   // {
+//   //   id: 1,
+//   //   title: "CLOUD ENGINEERING",
+//   //   description: [
+//   //     { text: "Infrastructure as Code", id: 1 },
+//   //     { text: "Terraform", id: 2 },
+//   //     { text: "AWS", id: 3 },
+//   //     { text: "Azure", id: 4 },
+//   //   ],
+//   // },
+//   {
+//     id: 1,
+//     description: [
+//       { text: "RESTful API", id: 2 },
+//       { text: "AWS", id: 3 },
+//       { text: "Kafka", id: 4 },
+//       { text: "Guidewire Cloud Platform", id: 1 }
+//     ],
+//   },
+// ];
 
 export const About = () => {
   const classes = useStyles();
@@ -156,57 +135,9 @@ export const About = () => {
               </CardContent>
             </Card></div>
           <div className={classes.intro}>
-            <Typography gutterBottom variant="body1">HELLO! 你好! KIA ORA!</Typography><br />
-            <Typography gutterBottom variant="body1">I have over four years of experience in designing, developing, and maintaining software applications in several large organizations.
-              Currently, I am working as a Software Engineer at Insurance Australia Group.</Typography><br />
-            <Typography gutterBottom variant="body1">Here are a few technologies I've been working with recently:</Typography>
-            <Grid container spacing={4}>
-              <Grid item md={6}>
-                {/* <Typography gutterBottom variant="subtitle2">
-                  <i class="fa fa-code" aria-hidden="true"></i> {skills[0].title}
-                </Typography> */}
-                {skills[0].description.map((descript) =>
-                  <Typography gutterBottom variant="subtitle2">
-                    <i class="fa fa-code" aria-hidden="true"></i> {descript.text}
-                  </Typography>
-                )}
-              </Grid>
-              {/* <Grid item md={6}>
-                <Typography gutterBottom variant="subtitle2">
-                  <i class="fa fa-cloud" aria-hidden="true"></i> {skills[1].title}
-                </Typography>
-
-                {skills[1].description.map((descript) =>
-                  <Typography gutterBottom variant="subtitle2">
-                    <i class="fa fa-check" aria-hidden="true"></i> {descript.text}
-                  </Typography>
-                )}
-              </Grid> */}
-              </Grid><br />
-            <Typography gutterBottom variant="body1">When not working or coding my next project,
-              I love painting in a bunch of different mediums, including arylic, coloured pencil, gouache, and watercolour.
-              My most recent project is the bird series.</Typography>
+            <Summary />
             <div className={classes.artwork}>
-              <Tooltip title="Little Penguin/Kororā" placement="left" TransitionComponent={Zoom}>
-                <div className={classes.imgBox}>
-                  <img src={blue} alt="penguin" />
-                </div>
-              </Tooltip>
-              <Tooltip title="New Zealand Pigeon/Kererū" placement="left" TransitionComponent={Zoom}>
-                <div className={classes.imgBox}>
-                  <img src={kereru} alt="kereru" />
-                </div>
-              </Tooltip>
-              <Tooltip title="Recessive Red Domestic Pigeon" placement="left" TransitionComponent={Zoom}>
-                <div className={classes.imgBox}>
-                  <img src={brown} alt="pigeon" />
-                </div>
-              </Tooltip>
-              <Tooltip title="Kōkako" placement="left" TransitionComponent={Zoom}>
-                <div className={classes.imgBox}>
-                  <img src={kokako} alt="kokako" />
-                </div>
-              </Tooltip>
+              <Artwork />
             </div>
           </div>
         </div>

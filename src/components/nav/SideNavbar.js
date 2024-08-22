@@ -47,8 +47,19 @@ const ChangeOnScroll = props => {
 export const SideNavbar = props => {
 
   const classes = useStyles();
-
   const [setActiveNav] = useState("#");
+
+  function SideBar({ link, title, name }) {
+    return (
+      <Link href={link}
+        onClick={() => setActiveNav({ title })}
+        underline="none"
+        className={classes.link}
+      >
+        <Typography variant="body2">{name}</Typography>
+      </Link>
+    );
+  };
 
   return (
     <ChangeOnScroll {...props}>
@@ -59,38 +70,10 @@ export const SideNavbar = props => {
         }}
       >
         <Toolbar>
-          <Link href="/#"
-            onClick={() => setActiveNav("#")}
-            underline="none"
-            className={classes.link}
-          >
-            <Typography variant="body2">HOME</Typography>
-          </Link>
-
-          <Link href="#about"
-            onClick={() => setActiveNav("#about")}
-            underline="none"
-            className={classes.link}
-          >
-            <Typography variant="body2">ABOUT</Typography>
-          </Link>
-
-          <Link href="#work"
-            onClick={() => setActiveNav("#work")}
-            underline="none"
-            className={classes.link}
-          >
-            <Typography variant="body2">WORK</Typography>
-          </Link>
-
-          <Link href="#contact"
-            onClick={() => setActiveNav("#contact")}
-            underline="none"
-            className={classes.link}
-          >
-            <Typography variant="body2">CONTACT</Typography>
-          </Link>
-
+          <SideBar link="/#" title="#" name="HOME" />
+          <SideBar link="#about" title="#about" name="ABOUT" />
+          <SideBar link="#work" title="#work" name="WORK" />
+          <SideBar link="#contact" title="#contact" name="CONTACT" />
           <Link href={ResumePDF}
             target="_blank"
             rel="noopener noreferrer"
