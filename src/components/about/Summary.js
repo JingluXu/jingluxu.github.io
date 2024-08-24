@@ -15,4 +15,4 @@ export const Summary = () => {
                 My most recent project is the bird series.</Typography>
         </>
     );
-};
+}

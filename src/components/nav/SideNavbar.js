@@ -1,5 +1,3 @@
-import React from "react";
-import { useState } from "react";
 import { Link, Typography } from "@material-ui/core";
 import ResumePDF from "./../../assets/jinglu-xu-resume.pdf";
 import { makeStyles } from "@material-ui/core/styles";
@@ -7,6 +5,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Fade from '@mui/material/Fade';
+import { SideBar } from "./SideBar";
 
 const useStyles = makeStyles((theme) => ({
   bar: {
@@ -47,19 +46,6 @@ const ChangeOnScroll = props => {
 export const SideNavbar = props => {
 
   const classes = useStyles();
-  const [setActiveNav] = useState("#");
-
-  function SideBar({ link, title, name }) {
-    return (
-      <Link href={link}
-        onClick={() => setActiveNav({ title })}
-        underline="none"
-        className={classes.link}
-      >
-        <Typography variant="body2">{name}</Typography>
-      </Link>
-    );
-  };
 
   return (
     <ChangeOnScroll {...props}>
@@ -70,10 +56,10 @@ export const SideNavbar = props => {
         }}
       >
         <Toolbar>
-          <SideBar link="/#" title="#" name="HOME" />
-          <SideBar link="#about" title="#about" name="ABOUT" />
-          <SideBar link="#work" title="#work" name="WORK" />
-          <SideBar link="#contact" title="#contact" name="CONTACT" />
+          <SideBar link="/#" title="#" style={classes.link} name="HOME" />
+          <SideBar link="#about" title="#about" style={classes.link} name="ABOUT" />
+          <SideBar link="#work" title="#work" style={classes.link} name="WORK" />
+          <SideBar link="#contact" title="#contact" style={classes.link} name="CONTACT" />
           <Link href={ResumePDF}
             target="_blank"
             rel="noopener noreferrer"
@@ -86,4 +72,4 @@ export const SideNavbar = props => {
       </AppBar>
     </ChangeOnScroll>
   );
-};
+}

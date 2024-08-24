@@ -1,14 +1,13 @@
-import React from "react";
 import { Container, Typography, Avatar } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import { Link, Tooltip, IconButton, Zoom } from "@material-ui/core";
 import Resume from "../../assets/resume.json";
 import { Summary } from "./Summary";
 import { Artwork } from "./Artwork";
 
 import profile from "../../assets/profile.png";
+import { SocialItem } from "./SocialItem";
 
 const useStyles = makeStyles((theme) => ({
   aboutme: {
@@ -82,28 +81,9 @@ const useStyles = makeStyles((theme) => ({
 // ];
 
 export const About = () => {
-  const classes = useStyles();
 
-  const socialItems = Resume.basics.profiles.map((socialItem) => (
-    <Link
-      href={socialItem.url}
-      key={socialItem.network.toLowerCase()}
-      target="_blank"
-      underline="none"
-    >
-      <Tooltip
-        title={socialItem.username}
-        placement="left"
-        TransitionComponent={Zoom}
-      >
-        <IconButton
-          aria-label={socialItem.network}
-        >
-          <i className={socialItem.icon}></i>
-        </IconButton>
-      </Tooltip>
-    </Link>
-  ));
+  const classes = useStyles();
+  const socialItems = Resume.basics.profiles.map(socialItem => <SocialItem item={socialItem} />);
 
   return (
     <section id="about">
@@ -144,4 +124,4 @@ export const About = () => {
       </Container>
     </section>
   );
-};
+}

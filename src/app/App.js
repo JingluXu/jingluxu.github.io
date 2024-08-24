@@ -2,7 +2,7 @@ import React, { lazy } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { HelmetMeta } from "./HelmetMeta";
 import { ThemeProvider } from "@material-ui/core/styles";
-import { Theme } from "../components/theme/Themes.js";
+import { Theme } from "../components/theme/Themes";
 import { CssBaseline } from "@material-ui/core";
 
 import { Home } from "../pages/Home";

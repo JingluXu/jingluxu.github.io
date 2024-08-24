@@ -1,4 +1,3 @@
-import React from "react";
 import { Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@mui/material/Typography";
@@ -29,4 +28,4 @@ export const Title = () => {
       </Container>
     </section>
   );
-};
+}

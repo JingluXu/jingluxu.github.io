@@ -51,4 +51,4 @@ export const Artwork = () => {
             <Work title="Kōkako" image={kokako} bird="Kōkako" />
         </>
     );
-};
+}
