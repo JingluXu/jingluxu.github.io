@@ -1,8 +1,7 @@
-
-import Swal from "sweetalert2";
 import emailjs from "@emailjs/browser";
+import { Button, TextField, Typography } from "@material-ui/core";
 import { useRef } from "react";
-import { Typography, TextField, Button } from "@material-ui/core";
+import Swal from "sweetalert2";
 
 export const Email = ({ style }) => {
 
@@ -53,7 +52,7 @@ export const Email = ({ style }) => {
                 type="textarea"
                 multiline
                 maxRows={7}
-                rows={7}
+                minRows={7}
                 name="message"
                 variant="outlined"
             />

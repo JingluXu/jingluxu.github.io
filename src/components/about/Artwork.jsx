@@ -1,8 +1,8 @@
-import { makeStyles } from "@material-ui/core/styles";
 import { Tooltip, Zoom } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
 import blue from "../../assets/birds/blue.png";
-import kereru from "../../assets/birds/kereru.png";
 import brown from "../../assets/birds/brown.png";
+import kereru from "../../assets/birds/kereru.png";
 import kokako from "../../assets/birds/kokako.png";
 
 const useStyles = makeStyles((theme) => ({

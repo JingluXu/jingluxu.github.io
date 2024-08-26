@@ -1,5 +1,5 @@
+import { Container, Link, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import { Container, Typography, Link } from "@material-ui/core";
 import Resume from "../../assets/resume.json";
 import { Email } from "./Email";
 

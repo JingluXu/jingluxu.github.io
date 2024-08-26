@@ -1,13 +1,13 @@
-import React from "react";
-import { Link, Grid } from "@material-ui/core";
+import { Grid, Link } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
-import Paper from "@mui/material/Paper";
+import { useState } from "react";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
+import { Achievement } from "./Achievement";
 import { Stepper } from "./Stepper";
-import Achievement from "./Achievement.json";
 
 import "./Work.css";
 
@@ -55,7 +55,7 @@ export const Work = () => {
   const classes = useStyles();
   const theme = useTheme();
 
-  const [activeStep1, setActiveStep1] = React.useState(0);
+  const [activeStep1, setActiveStep1] = useState(0);
   const handleNext1 = () => {
     setActiveStep1((prevActiveStep) => prevActiveStep + 1);
   };
@@ -66,7 +66,7 @@ export const Work = () => {
     setActiveStep1(step);
   };
 
-  const [activeStep2, setActiveStep2] = React.useState(0);
+  const [activeStep2, setActiveStep2] = useState(0);
   const handleNext2 = () => {
     setActiveStep2((prevActiveStep) => prevActiveStep + 1);
   };
@@ -84,24 +84,24 @@ export const Work = () => {
         <div className={classes.workwrapper}>
           {/* Software */}
           <div className={classes.cardwrapper}>
-            <Grid item key={Achievement.work[0].id}>
+            <Grid item key={Achievement[0].id}>
               <Typography gutterBottom variant="h3">Software <br /> Development</Typography>
-              <Link href={Achievement.work[0].images[activeStep1].link} target="_blank">
+              <Link href={Achievement[0].images[activeStep1].link} target="_blank">
                 <AutoPlaySwipeableViews
                   axis={theme.direction === "rtl" ? "x-reverse" : "x"}
                   index={activeStep1}
                   onChangeIndex={handleStepChange1}
                   enableMouseEvents
-                  interval="7000"
+                  interval={7000}
                 >
-                  {Achievement.work[0].images.map((step, index) => (
+                  {Achievement[0].images.map((step, index) => (
                     <div key={step.label}>
                       {Math.abs(activeStep1 - index) <= 2 ? (
-                        <div class="container">
-                          <img class="contain" src={step.imgPath} alt={step.label} />
-                          <div class="overlay">
-                            <div class="icon">
-                              <i class="fa fa-search"></i>
+                        <div className="container">
+                          <img className="contain" src={step.imgPath} alt={step.label} />
+                          <div className="overlay">
+                            <div className="icon">
+                              <i className="fa fa-search"></i>
                             </div>
                           </div>
                         </div>
@@ -114,33 +114,33 @@ export const Work = () => {
                 elevation={0}
                 className={classes.paper}
               >
-                <Typography gutterBottom variant="h6">{Achievement.work[0].images[activeStep1].label}</Typography>
-                <Typography variant="subtitle1">{Achievement.work[0].images[activeStep1].details}</Typography>
+                <Typography gutterBottom variant="h6">{Achievement[0].images[activeStep1].label}</Typography>
+                <Typography variant="subtitle1">{Achievement[0].images[activeStep1].details}</Typography>
               </Paper>
-              <Stepper images={Achievement.work[0].images} step={activeStep1} next={handleNext1} back={handleBack1} />
+              <Stepper images={Achievement[0].images} step={activeStep1} next={handleNext1} back={handleBack1} />
             </Grid>
           </div>
 
           {/* Cloud */}
           <div className={classes.cardwrapper}>
-            <Grid item key={Achievement.work[1].id}>
+            <Grid item key={Achievement[1].id}>
               <Typography gutterBottom variant="h3">Cloud <br /> Engineering</Typography>
-              <Link href={Achievement.work[1].images[activeStep2].link} target="_blank">
+              <Link href={Achievement[1].images[activeStep2].link} target="_blank">
                 <AutoPlaySwipeableViews
                   axis={theme.direction === "rtl" ? "x-reverse" : "x"}
                   index={activeStep2}
                   onChangeIndex={handleStepChange2}
                   enableMouseEvents
-                  interval="7000"
+                  interval={7000}
                 >
-                  {Achievement.work[1].images.map((step, index) => (
+                  {Achievement[1].images.map((step, index) => (
                     <div key={step.label}>
                       {Math.abs(activeStep2 - index) <= 2 ? (
-                        <div class="container">
-                          <img class="contain" src={step.imgPath} alt={step.label} />
-                          <div class="overlay">
-                            <div class="icon">
-                              <i class="fa fa-search"></i>
+                        <div className="container">
+                          <img className="contain" src={step.imgPath} alt={step.label} />
+                          <div className="overlay">
+                            <div className="icon">
+                              <i className="fa fa-search"></i>
                             </div>
                           </div>
                         </div>
@@ -153,10 +153,10 @@ export const Work = () => {
                 elevation={0}
                 className={classes.paper}
               >
-                <Typography gutterBottom variant="h6">{Achievement.work[1].images[activeStep2].label}</Typography>
-                <Typography variant="subtitle1">{Achievement.work[1].images[activeStep2].details}</Typography>
+                <Typography gutterBottom variant="h6">{Achievement[1].images[activeStep2].label}</Typography>
+                <Typography variant="subtitle1">{Achievement[1].images[activeStep2].details}</Typography>
               </Paper>
-              <Stepper images={Achievement.work[1].images} step={activeStep2} next={handleNext2} back={handleBack2} />
+              <Stepper images={Achievement[1].images} step={activeStep2} next={handleNext2} back={handleBack2} />
             </Grid>
           </div>
         </div>

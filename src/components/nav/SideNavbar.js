@@ -1,10 +1,10 @@
 import { Link, Typography } from "@material-ui/core";
-import ResumePDF from "./../../assets/jinglu-xu-resume.pdf";
-import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
+import { makeStyles } from "@material-ui/core/styles";
 import Toolbar from "@material-ui/core/Toolbar";
-import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Fade from '@mui/material/Fade';
+import useScrollTrigger from '@mui/material/useScrollTrigger';
+import ResumePDF from "./../../assets/jinglu-xu-resume.pdf";
 import { SideBar } from "./SideBar";
 
 const useStyles = makeStyles((theme) => ({

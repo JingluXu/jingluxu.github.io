@@ -1,11 +1,10 @@
-import React from "react";
 import { Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import { About } from "../components/about/About";
+import { Contact } from "../components/contact/Contact";
 import { SideNavbar } from "../components/nav/SideNavbar";
 import { Title } from "../components/title/Title";
-import { About } from "../components/about/About";
 import { Work } from "../components/work/Work";
-import { Contact } from "../components/contact/Contact";
 
 const useStyles = makeStyles(() => ({
   page: {

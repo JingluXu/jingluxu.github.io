@@ -1,4 +1,4 @@
-import { Typography, Grid } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 
 const skills = [
     // {
@@ -29,22 +29,22 @@ export const Skill = () => {
             <Grid container spacing={4}>
                 <Grid item md={6}>
                     {/* <Typography gutterBottom variant="subtitle2">
-                  <i class="fa fa-code" aria-hidden="true"></i> {skills[0].title}
+                  <i className="fa fa-code" aria-hidden="true"></i> {skills[0].title}
                 </Typography> */}
                     {skills[0].description.map((descript) =>
-                        <Typography gutterBottom variant="subtitle2">
-                            <i class="fa fa-code" aria-hidden="true"></i> {descript.text}
+                        <Typography key={descript.id} gutterBottom variant="subtitle2">
+                            <i className="fa fa-code" aria-hidden="true"></i> {descript.text}
                         </Typography>
                     )}
                 </Grid>
                 {/* <Grid item md={6}>
                 <Typography gutterBottom variant="subtitle2">
-                  <i class="fa fa-cloud" aria-hidden="true"></i> {skills[1].title}
+                  <i className="fa fa-cloud" aria-hidden="true"></i> {skills[1].title}
                 </Typography>
 
                 {skills[1].description.map((descript) =>
-                  <Typography gutterBottom variant="subtitle2">
-                    <i class="fa fa-check" aria-hidden="true"></i> {descript.text}
+                  <Typography key={descript.id} gutterBottom variant="subtitle2">
+                    <i className="fa fa-check" aria-hidden="true"></i> {descript.text}
                   </Typography>
                 )}
               </Grid> */}

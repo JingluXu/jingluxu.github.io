@@ -1,9 +1,9 @@
-import React, { lazy } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { HelmetMeta } from "./HelmetMeta";
-import { ThemeProvider } from "@material-ui/core/styles";
-import { Theme } from "../components/theme/Themes";
 import { CssBaseline } from "@material-ui/core";
+import { ThemeProvider } from "@material-ui/core/styles";
+import { lazy } from "react";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import { Theme } from "../components/theme/Themes";
+import { HelmetMeta } from "./HelmetMeta";
 
 import { Home } from "../pages/Home";
 

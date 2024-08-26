@@ -1,10 +1,10 @@
-import { Container, Typography, Avatar } from "@material-ui/core";
+import { Avatar, Container, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Resume from "../../assets/resume.json";
-import { Summary } from "./Summary";
 import { Artwork } from "./Artwork";
+import { Summary } from "./Summary";
 
 import profile from "../../assets/profile.png";
 import { SocialItem } from "./SocialItem";
@@ -83,7 +83,7 @@ const useStyles = makeStyles((theme) => ({
 export const About = () => {
 
   const classes = useStyles();
-  const socialItems = Resume.basics.profiles.map(socialItem => <SocialItem item={socialItem} />);
+  const socialItems = Resume.basics.profiles.map(socialItem => <SocialItem key = {socialItem.network} item={socialItem} />);
 
   return (
     <section id="about">
@@ -108,9 +108,9 @@ export const About = () => {
                 padding: "5%",
               }}>
                 <Typography gutterBottom variant="h4" style={{ fontWeight: 700, }} align="center">{Resume.basics.name}</Typography>
-                <Typography gutterBottom variant="subtitle2" align="center"><i class="fa fa-suitcase" aria-hidden="true"></i> {Resume.basics.job}</Typography>
-                <Typography gutterBottom variant="subtitle2" align="center"><i class="fa fa-graduation-cap" aria-hidden="true"></i> MSc, BSc, BBA</Typography>
-                <Typography gutterBottom variant="subtitle2" align="center"><i class="fa fa-map-pin" aria-hidden="true"></i> {Resume.basics.location.city}, {Resume.basics.location.country}</Typography>
+                <Typography gutterBottom variant="subtitle2" align="center"><i className="fa fa-suitcase" aria-hidden="true"></i> {Resume.basics.job}</Typography>
+                <Typography gutterBottom variant="subtitle2" align="center"><i className="fa fa-graduation-cap" aria-hidden="true"></i> MSc, BSc, BBA</Typography>
+                <Typography gutterBottom variant="subtitle2" align="center"><i className="fa fa-map-pin" aria-hidden="true"></i> {Resume.basics.location.city}, {Resume.basics.location.country}</Typography>
                 <Typography gutterBottom align="center">{socialItems}</Typography>
               </CardContent>
             </Card></div>
