@@ -8,6 +8,7 @@ import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
 import { Achievement } from "./Achievement";
 import { Stepper } from "./Stepper";
+import { ImgContainer } from "./ImgContainer"
 
 import "./Work.css";
 
@@ -97,14 +98,7 @@ export const Work = () => {
                   {Achievement[0].images.map((step, index) => (
                     <div key={step.label}>
                       {Math.abs(activeStep1 - index) <= 2 ? (
-                        <div className="container">
-                          <img className="contain" src={step.imgPath} alt={step.label} />
-                          <div className="overlay">
-                            <div className="icon">
-                              <i className="fa fa-search"></i>
-                            </div>
-                          </div>
-                        </div>
+                        <ImgContainer navStep={step} />
                       ) : null}
                     </div>
                   ))}
@@ -136,14 +130,7 @@ export const Work = () => {
                   {Achievement[1].images.map((step, index) => (
                     <div key={step.label}>
                       {Math.abs(activeStep2 - index) <= 2 ? (
-                        <div className="container">
-                          <img className="contain" src={step.imgPath} alt={step.label} />
-                          <div className="overlay">
-                            <div className="icon">
-                              <i className="fa fa-search"></i>
-                            </div>
-                          </div>
-                        </div>
+                        <ImgContainer navStep={step} />
                       ) : null}
                     </div>
                   ))}

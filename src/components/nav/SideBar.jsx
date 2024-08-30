@@ -3,7 +3,7 @@ import { useState } from "react";
 
 export const SideBar = ({ link, title, style, name }) => {
 
-  const [setActiveNav] = useState("#");
+  const [activeNav, setActiveNav] = useState("#");
 
   return (
     <Link href={link}
