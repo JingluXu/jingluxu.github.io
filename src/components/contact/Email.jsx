@@ -3,7 +3,7 @@ import { Button, TextField, Typography } from "@material-ui/core";
 import { useRef } from "react";
 import Swal from "sweetalert2";
 
-export const Email = ({ style }) => {
+export function Email({ style }) {
 
     const form = useRef();
 
@@ -61,4 +61,4 @@ export const Email = ({ style }) => {
             </Button>
         </form>
     );
-}
+};

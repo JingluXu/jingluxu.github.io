@@ -43,7 +43,7 @@ const ChangeOnScroll = props => {
   );
 }
 
-export const SideNavbar = props => {
+export function SideNavbar(props) {
 
   const classes = useStyles();
 
@@ -72,4 +72,4 @@ export const SideNavbar = props => {
       </AppBar>
     </ChangeOnScroll>
   );
-}
+};

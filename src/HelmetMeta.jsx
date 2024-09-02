@@ -1,5 +1,5 @@
 import Helmet from "react-helmet";
-import Resume from "../assets/resume.json";
+import Resume from "./assets/resume.json";
 
 export const HelmetMeta = () => {
     return (

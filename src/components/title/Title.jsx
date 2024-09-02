@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const Title = () => {
+export function Title() {
   const classes = useStyles();
 
   return (
@@ -28,4 +28,4 @@ export const Title = () => {
       </Container>
     </section>
   );
-}
+};

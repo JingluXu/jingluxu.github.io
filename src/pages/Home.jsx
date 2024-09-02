@@ -1,10 +1,10 @@
 import { Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import { About } from "../components/about/About";
-import { Contact } from "../components/contact/Contact";
 import { SideNavbar } from "../components/nav/SideNavbar";
 import { Title } from "../components/title/Title";
-import { Work } from "../components/work/Work";
+import { About } from "./About";
+import { Contact } from "./Contact";
+import { Work } from "./Work";
 
 const useStyles = makeStyles(() => ({
   page: {

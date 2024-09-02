@@ -1,7 +1,7 @@
 import { Link, Typography } from "@material-ui/core";
 import { useState } from "react";
 
-export const SideBar = ({ link, title, style, name }) => {
+export function SideBar({ link, title, style, name }) {
 
   const [activeNav, setActiveNav] = useState("#");
 
@@ -14,4 +14,4 @@ export const SideBar = ({ link, title, style, name }) => {
       <Typography variant="body2">{name}</Typography>
     </Link>
   );
-}
+};

@@ -1,6 +1,6 @@
 import { IconButton, Link, Tooltip, Zoom } from "@material-ui/core";
 
-export const SocialItem = ({ item }) => {
+export function SocialItem({ item }) {
     return (
         <Link
             href={item.url}
@@ -20,4 +20,4 @@ export const SocialItem = ({ item }) => {
             </Tooltip>
         </Link>
     );
-}
+};

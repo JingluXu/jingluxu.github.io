@@ -6,11 +6,11 @@ import { useTheme } from "@mui/material/styles";
 import { useState } from "react";
 import SwipeableViews from "react-swipeable-views";
 import { autoPlay } from "react-swipeable-views-utils";
-import { Achievement } from "./Achievement";
-import { Stepper } from "./Stepper";
-import { ImgContainer } from "./ImgContainer"
+import { Achievement } from "../components/work/Achievement";
+import { ImgContainer } from "../components/work/ImgContainer";
+import { Stepper } from "../components/work/Stepper";
 
-import "./Work.css";
+import "../components/work/Work.css";
 
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -150,4 +150,4 @@ export const Work = () => {
       </Grid>
     </section>
   );
-}
+};

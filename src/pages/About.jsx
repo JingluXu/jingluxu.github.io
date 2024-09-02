@@ -2,12 +2,12 @@ import { Avatar, Container, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import Resume from "../../assets/resume.json";
-import { Artwork } from "./Artwork";
-import { Summary } from "./Summary";
+import Resume from "../assets/resume.json";
+import { Artwork } from "../components/about/Artwork";
+import { Summary } from "../components/about/Summary";
 
-import profile from "../../assets/profile.png";
-import { SocialItem } from "./SocialItem";
+import profile from "../assets/profile.png";
+import { SocialItem } from "../components/about/SocialItem";
 
 const useStyles = makeStyles((theme) => ({
   aboutme: {
@@ -124,4 +124,4 @@ export const About = () => {
       </Container>
     </section>
   );
-}
+};

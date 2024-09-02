@@ -23,7 +23,7 @@ const skills = [
     },
 ];
 
-export const Skill = () => {
+export function Skill() {
     return (
         <>
             <Grid container spacing={4}>
@@ -51,4 +51,4 @@ export const Skill = () => {
             </Grid><br />
         </>
     );
-}
+};

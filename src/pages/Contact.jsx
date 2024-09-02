@@ -1,7 +1,7 @@
 import { Container, Link, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import Resume from "../../assets/resume.json";
-import { Email } from "./Email";
+import Resume from "../assets/resume.json";
+import { Email } from "../components/contact/Email";
 
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -74,4 +74,4 @@ export const Contact = () => {
       </Container>
     </section>
   )
-}
+};

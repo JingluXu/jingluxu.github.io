@@ -1,4 +1,4 @@
-export const ImgContainer = ({ navStep }) => {
+export function ImgContainer({ navStep }) {
   return (
     <div className="container">
       <img className="contain" src={navStep.imgPath} alt={navStep.label} />
@@ -9,4 +9,4 @@ export const ImgContainer = ({ navStep }) => {
       </div>
     </div>
   );
-}
+};

@@ -21,7 +21,7 @@ const useStyles = makeStyles(() => ({
     },
 }));
 
-export const Stepper = ({ images, step, next, back }) => {
+export function Stepper({ images, step, next, back }) {
 
     const classes = useStyles();
     const theme = useTheme();
@@ -57,4 +57,4 @@ export const Stepper = ({ images, step, next, back }) => {
             }
         />
     );
-}
+};

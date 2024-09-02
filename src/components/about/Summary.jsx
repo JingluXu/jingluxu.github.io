@@ -1,7 +1,7 @@
 import { Typography } from "@material-ui/core";
 import { Skill } from "./Skill";
 
-export const Summary = () => {
+export function Summary() {
     return (
         <>
             <Typography gutterBottom variant="body1">HELLO! 你好! KIA ORA!</Typography><br />
@@ -15,4 +15,4 @@ export const Summary = () => {
                 My most recent project is the bird series.</Typography>
         </>
     );
-}
+};

@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 
-export const Artwork = () => {
+export function Artwork() {
     
     const classes = useStyles();
 
@@ -51,4 +51,4 @@ export const Artwork = () => {
             <Work title="Kōkako" image={kokako} bird="Kōkako" />
         </>
     );
-}
+};
