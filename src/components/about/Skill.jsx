@@ -14,11 +14,9 @@ const skills = [
     {
         id: 1,
         description: [
-            { text: "RESTful API", id: 1 },
-            { text: "Java", id: 2 },
-            { text: "AWS", id: 3 },
-            { text: "Kafka", id: 4 },
-            { text: "React", id: 5 },
+            { text: "Frontend: React, Material UI", id: 1 },
+            { text: "Backend: Java, Node.js", id: 2 },
+            { text: "Integration: Kafka, AWS", id: 3 },
         ],
     },
 ];
