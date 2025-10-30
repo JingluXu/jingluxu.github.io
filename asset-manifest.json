@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.25b64aba.css",
-    "main.js": "/static/js/main.59b46c28.js",
+    "main.js": "/static/js/main.eef65089.js",
     "static/js/364.1aea4141.chunk.js": "/static/js/364.1aea4141.chunk.js",
     "static/media/profile.png": "/static/media/profile.358c7ab95027ac6bd36a.png",
     "static/media/kereru.png": "/static/media/kereru.4f0e57b3fa2868e9e61a.png",
     "static/media/blue.png": "/static/media/blue.48c97e15d428bda1e527.png",
     "static/media/brown.png": "/static/media/brown.c51e1fbdc47650b2057e.png",
     "static/media/kokako.png": "/static/media/kokako.e3bb1263708e8a29a414.png",
-    "static/media/jinglu-xu-resume.pdf": "/static/media/jinglu-xu-resume.1eab9ccb0624fcf6c289.pdf",
+    "static/media/jinglu-xu-resume.pdf": "/static/media/jinglu-xu-resume.29b01094c9ef1e4cfe4c.pdf",
     "index.html": "/index.html",
     "main.25b64aba.css.map": "/static/css/main.25b64aba.css.map",
-    "main.59b46c28.js.map": "/static/js/main.59b46c28.js.map",
+    "main.eef65089.js.map": "/static/js/main.eef65089.js.map",
     "364.1aea4141.chunk.js.map": "/static/js/364.1aea4141.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.25b64aba.css",
-    "static/js/main.59b46c28.js"
+    "static/js/main.eef65089.js"
   ]
 }
